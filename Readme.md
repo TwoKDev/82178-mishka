@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Костиков](https://up.htmlacademy.ru/adaptive/10/user/82178).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Безуглый](https://up.htmlacademy.ru/adaptive/10/user/123364).
 
 ---
 
