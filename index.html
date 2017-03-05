@@ -155,12 +155,15 @@
       <div class="mw-add-to-cart__wrapper">
         <h2 class="mw-add-to-cart__title">Добавить в корзину</h2>
         <p class="mw-add-to-cart__text">Выберите размер:</p>
-        <ul class="mw-add-to-cart__size-list">
-          <li class="mw-add-to-cart__size  mw-add-to-cart__size--active">S</li>
-          <li class="mw-add-to-cart__size">M</li>
-          <li class="mw-add-to-cart__size">L</li>
-        </ul>
-        <button class="mw-add-to-cart__btn btn" type="button">Добавить</button>
+        <form class="mw-add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="size-s">S</label>
+          <input id="size-s" type="radio" name="size" value="size-s" checked>
+          <label for="size-m">M</label>
+          <input id="size-m" type="radio" name="size" value="size-m">
+          <label for="size-l">L</label>
+          <input id="size-l" type="radio" name="size" value="size-l">
+          <button class="mw-add-to-cart__btn  btn" type="submit">Добавить</button>
+        </form>
       </div>
     </section>
   </body>
