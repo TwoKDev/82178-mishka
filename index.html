@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XNv0MK1BQnUT18qbUzYTZO--9MG15rQ3&amp;width=322&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </head>
   <body>
 
@@ -101,8 +102,8 @@
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <span class="reviews__author-email">@misssssiskras</span>
         </blockquote>
-        <button class="reviews__btn-prev">Предыдущий отзыв</button>
-        <button class="reviews__btn-next">Следующий отзыв</button>
+        <button class="reviews__btn-prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__btn-next" type="button">Следующий отзыв</button>
         <a class="reviews__btn-write  btn" href="#">Написать</a>
       </section>
     </main>
@@ -150,5 +151,17 @@
       </div>
     </footer>
 
+    <section class="mw-add-to-cart mw-add-to-cart--closes">
+      <div class="mw-add-to-cart__wrapper">
+        <h2 class="mw-add-to-cart__title">Добавить в корзину</h2>
+        <p class="mw-add-to-cart__text">Выберите размер:</p>
+        <ul class="mw-add-to-cart__size-list">
+          <li class="mw-add-to-cart__size  mw-add-to-cart__size--active">S</li>
+          <li class="mw-add-to-cart__size">M</li>
+          <li class="mw-add-to-cart__size">L</li>
+        </ul>
+        <button class="mw-add-to-cart__btn btn" type="button">Добавить</button>
+      </div>
+    </section>
   </body>
 </html>
