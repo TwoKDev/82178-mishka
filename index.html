@@ -3,25 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XNv0MK1BQnUT18qbUzYTZO--9MG15rQ3&amp;width=322&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=XNv0MK1BQnUT18qbUzYTZO--9MG15rQ3&amp;width=322&amp;height=457&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
   </head>
   <body>
 
     <header class="page-header">
-      <div class="page-logo">
-        <a class="page-logo__link" href="index.html">
-          <img class="page-logo__image" src="#" alt="Mishka">
-        </a>
+      <div class="page-logo__images">
+        <img class="page-logo__image" src="#" alt="Mishka">
       </div>
       <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Поиск по сайту</a>
@@ -110,37 +108,35 @@
 
     <footer class="page-footer">
       <section class="page-footer__contacts">
-        <div class="page-footer__contacts-wrapper">
-          <header class="page-footer__contacts-header">
-            <h2 class="page-footer__contacts-title">Контакты</h2>
-            <span class="page-footer__contacts-email-title">E-mail:</span>
-            <a class="page-footer__contacts-email-value" href="email:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            <span class="page-footer__contacts-address-title">Адрес:</span>
-            г. Санкт-Петербург,<br>
-            ул. Большая<br>
-            Конюшенная,<br>
-            д. 19/8, офис 101
-          </header>
-          <footer class="page-footer__contacts-footer">
-            <div class="page-footer__contacts-map-wrapper">
-
-            </div>
-            <a class="page-footer__contacts-btn-write  btn" href="#">Напишите нам</a>
-          </footer>
-        </div>
+        <header class="page-footer__contacts-header">
+          <h2 class="page-footer__contacts-title">Контакты</h2>
+          <span class="page-footer__contacts-email-title">E-mail:</span>
+          <a class="page-footer__contacts-email-value" href="email:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <span class="page-footer__contacts-address-title">Адрес:</span>
+          г. Санкт-Петербург,<br>
+          ул. Большая<br>
+          Конюшенная,<br>
+          д. 19/8, офис 101
+        </header>
+        <footer class="page-footer__contacts-footer">
+          <div class="page-footer__contacts-map-wrapper">
+            <div id="yandex-map" width="322" height="457"></div>
+          </div>
+          <a class="page-footer__contacts-btn-write  btn" href="#">Напишите нам</a>
+        </footer>
       </section>
 
-      <div class="page-footer__social-wrapper">
+      <div class="page-footer__wrapper">
         <section class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link  social__link--twitter"  href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+              <a class="social__link  social__link--twitter"  href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
             </li>
             <li class="social__item">
               <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link  social__link--twitter" href="#">Твитер</a>
+              <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твитер</a>
             </li>
           </ul>
         </section>
@@ -151,18 +147,18 @@
       </div>
     </footer>
 
-    <section class="mw-add-to-cart mw-add-to-cart--closes">
-      <div class="mw-add-to-cart__wrapper">
-        <h2 class="mw-add-to-cart__title">Добавить в корзину</h2>
-        <p class="mw-add-to-cart__text">Выберите размер:</p>
-        <form class="mw-add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal-add-to-cart modal-add-to-cart--closes">
+      <div class="modal-add-to-cart__wrapper">
+        <h2 class="modal-add-to-cart__title">Добавить в корзину</h2>
+        <p class="modal-add-to-cart__text">Выберите размер:</p>
+        <form class="modal-add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
           <label for="size-s">S</label>
-          <input id="size-s" type="radio" name="size" value="size-s" checked>
+          <input class="modal-add-to-cart__radio-size" id="size-s" type="radio" name="size" value="size-s" checked>
           <label for="size-m">M</label>
-          <input id="size-m" type="radio" name="size" value="size-m">
+          <input class="modal-add-to-cart__radio-size" id="size-m" type="radio" name="size" value="size-m">
           <label for="size-l">L</label>
-          <input id="size-l" type="radio" name="size" value="size-l">
-          <button class="mw-add-to-cart__btn  btn" type="submit">Добавить</button>
+          <input class="modal-add-to-cart__radio-size" id="size-l" type="radio" name="size" value="size-l">
+          <button class="modal-add-to-cart__btn  btn" type="submit">Добавить</button>
         </form>
       </div>
     </section>

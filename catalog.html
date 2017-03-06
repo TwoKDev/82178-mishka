@@ -17,10 +17,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Вязание на заказ</a>
+              <a href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Поиск по сайту</a>
@@ -90,17 +90,17 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social-wrapper">
+      <div class="page-footer__wrapper">
         <section class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link  social__link--twitter"  href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+              <a class="social__link  social__link--twitter"  href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
             </li>
             <li class="social__item">
               <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
             </li>
             <li class="social__item">
-              <a class="social__link  social__link--twitter" href="#">Твитер</a>
+              <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твитер</a>
             </li>
           </ul>
         </section>
@@ -111,18 +111,18 @@
       </div>
     </footer>
 
-    <section class="mw-add-to-cart mw-add-to-cart--closes">
-      <div class="mw-add-to-cart__wrapper">
-        <h2 class="mw-add-to-cart__title">Добавить в корзину</h2>
-        <p class="mw-add-to-cart__text">Выберите размер:</p>
-        <form class="mw-add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
+    <section class="modal-add-to-cart modal-add-to-cart--closes">
+      <div class="modal-add-to-cart__wrapper">
+        <h2 class="modal-add-to-cart__title">Добавить в корзину</h2>
+        <p class="modal-add-to-cart__text">Выберите размер:</p>
+        <form class="modal-add-to-cart__form" action="https://echo.htmlacademy.ru" method="post">
           <label for="size-s">S</label>
           <input id="size-s" type="radio" name="size" value="size-s" checked>
           <label for="size-m">M</label>
           <input id="size-m" type="radio" name="size" value="size-m">
           <label for="size-l">L</label>
           <input id="size-l" type="radio" name="size" value="size-l">
-          <button class="mw-add-to-cart__btn  btn" type="submit">Добавить</button>
+          <button class="modal-add-to-cart__btn  btn" type="submit">Добавить</button>
         </form>
       </div>
     </section>
