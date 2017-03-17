@@ -1,0 +1,22 @@
+// цвета на странице
+$line-border-color: #ececec;
+$page-items-color: #63d1bb;
+$social-btn-color: #221f1f;
+$btn-border-color: #444444;
+$page-font-color: #444444;
+$week-goods-font-color: #63d1bb;
+$background-color-catalogs-link-item-1: #63d1bb;
+$background-color-catalogs-link-item-2: #56c3b2;
+$background-color-page-blocks: #f1f1f1;
+
+// размеры шрифтов
+$font-size-page-title: 27px;
+$font-size-section-title: 25px;
+$font-size-catalogs-link: 19px;
+$font-size-bold-text: 17px;
+$font-size-normal-text: 15px;
+
+// размеры для media query
+$mobile-width-only: #{"(max-width: 767px)"};
+$table-width: #{"(min-width: 768px)"};
+$desktop-width: #{"(min-width: 1150px)"};

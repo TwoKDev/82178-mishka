@@ -3,40 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="page-header">
-      <div class="page-logo">
-        <a class="page-logo__link" href="index.html">
-          <img class="page-logo__image" src="#" alt="Mishka">
-        </a>
-      </div>
-      <nav class="main-nav  main-nav--closed">
+      <div class="center-wrapper">
+        <div class="page-logo__images">
+          <a class="page-logo__link" href="index.html">
+            <img class="page-logo__image" src="img/logo-mobile.svg" alt="Mishka" width="86px" height="35px">
+          </a>
+        </div>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <div class="center-wrapper">
+                <a href="catalog.html">Каталог товаров</a>
+              </div>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
+              <div class="center-wrapper">
+                <a href="form.html">Вязание на заказ</a>
+              </div>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Поиск по сайту</a>
+            <li class="main-nav__item  main-nav__item-icon  main-nav__item-icon--search">
+              <div class="center-wrapper">
+                <a href="#">Поиск по сайту</a>
+              </div>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Корзина: пока пуста</a>
+            <li class="main-nav__item  main-nav__item-icon  main-nav__item-icon--cart">
+              <div class="center-wrapper">
+                <a href="#">Корзина: пока пуста</a>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="page-header__title-wrapper">
-        <h1 class="page-header__title">Каталог товаров</h1>
-      </div>
     </header>
 
     <main class="page-main">
+      <header class="page-main__header">
+        <h1 class="page-main__title  center-wrapper">Каталог товаров</h1>
+      </header>
       <article class="goods">
         <header class="goods__header">
           <div class="goods__images">
@@ -135,5 +146,7 @@
         </form>
       </div>
     </section>-->
+
+    <script src="js/script.js" defer></script>
   </body>
 </html>

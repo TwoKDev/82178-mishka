@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  min-height: 79px;
+}
+
+.copyright__title {
+  font-size: $font-size-catalogs-link;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  font-size: 0px;
+  background-image: url('../img/logo-htmlacademy.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
