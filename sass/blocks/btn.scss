@@ -1,0 +1,16 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 48px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $btn-border-color;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $page-font-color;
+}

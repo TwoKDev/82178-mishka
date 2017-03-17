@@ -21,11 +21,11 @@
   line-height: 24px;
   color: white;
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-    }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
 }
 
 .catalogs-link__item--icon-interior::after {
