@@ -7,10 +7,12 @@
   border-width: 2px;
   border-style: solid;
   border-color: $btn-border-color;
+  background-color: none;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: $page-font-color;
+  cursor: pointer;
 }

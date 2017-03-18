@@ -56,7 +56,7 @@
         </div>
       </header>
 
-      <article class="goods-week">
+      <article class="goods-week  center-wrapper">
         <header class="goods-week__header">
           <h1 class="goods-week__title">Вязаные корзинки</h1>
           <span class="goods-week__title-intro">Товар недели</span>
@@ -85,19 +85,19 @@
         </footer>
       </article>
 
-      <section class="advantages">
-        <h2 class="advantages__title">Коротко о нас</h2>
+      <section class="advantages  center-wrapper">
+        <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">Экологически чистые материалы</li>
-          <li class="advantages__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item">Поддержка отечественного производителя</li>
-          <li class="advantages__item">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item  advantages__item--icon-1">Экологически чистые материалы</li>
+          <li class="advantages__item  advantages__item--icon-2">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item  advantages__item--icon-3">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item  advantages__item--icon-4">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item  advantages__item--icon-5">Поддержка отечественного производителя</li>
+          <li class="advantages__item  advantages__item--icon-6">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
 
-      <section class="reviews">
+      <section class="reviews  center-wrapper">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text-review">
@@ -109,8 +109,10 @@
           <cite class="reviews__author-name">Анастасия Красильникова</cite>
           <span class="reviews__author-email">@misssssiskras</span>
         </blockquote>
-        <button class="reviews__btn-prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__btn-next" type="button">Следующий отзыв</button>
+        <div class="reviews__btn-wrapper">
+          <button class="reviews__btn  reviews__btn--prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__btn  reviews__btn--next" type="button">Следующий отзыв</button>
+        </div>
         <a class="reviews__btn-write  btn" href="#">Написать</a>
       </section>
 
@@ -156,21 +158,29 @@
       </section>
     </footer>
 
-    <!--<section class="modal-add-to-cart modal-add-to-cart--closes">
-      <div class="modal-add-to-cart__wrapper">
+    <section class="modal-add-to-cart modal-add-to-cart--opened">
+      <div class="modal-add-to-cart__wrapper  center-wrapper">
         <h2 class="modal-add-to-cart__title">Добавить в корзину</h2>
         <p class="modal-add-to-cart__text">Выберите размер:</p>
         <form class="modal-add-to-cart__form" id="form-cart" action="https://echo.htmlacademy.ru" method="post">
-          <label for="size-s">S</label>
-          <input class="modal-add-to-cart__radio-size" id="size-s" type="radio" name="size" value="size-s" checked>
-          <label for="size-m">M</label>
-          <input class="modal-add-to-cart__radio-size" id="size-m" type="radio" name="size" value="size-m">
-          <label for="size-l">L</label>
-          <input class="modal-add-to-cart__radio-size" id="size-l" type="radio" name="size" value="size-l">
+          <label class="modal-add-to-cart__label-size">
+            <input class="modal-add-to-cart__radio-size" id="size-s" type="radio" name="size" value="size-s" checked>
+            <span class="modal-add-to-cart__label-text">S</span>
+          </label>
+
+          <label class="modal-add-to-cart__label-size">
+            <input class="modal-add-to-cart__radio-size" id="size-m" type="radio" name="size" value="size-m">
+            <span class="modal-add-to-cart__label-text">M</span>
+          </label>
+
+          <label class="modal-add-to-cart__label-size">
+            <input class="modal-add-to-cart__radio-size" id="size-l" type="radio" name="size" value="size-l">
+            <span class="modal-add-to-cart__label-text">L</span>
+          </label>
           <button class="modal-add-to-cart__btn  btn" type="submit">Добавить</button>
         </form>
       </div>
-    </section>-->
+    </section>
 
     <script src="js/script.js" defer></script>
   </body>

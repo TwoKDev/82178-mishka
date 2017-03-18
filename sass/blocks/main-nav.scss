@@ -1,7 +1,7 @@
 .main-nav {
   position: absolute;
-  top: 89px;
-  left: 8px;
+  top: 80px;
+  left: 0px;
   z-index: 1;
   display: none;
 }
@@ -58,8 +58,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30%;
-  right: 0;
+  top: 32px;
+  right: 32px;
   width: 20px;
   height: 14px;
   font-size: 0;
@@ -72,36 +72,36 @@
   outline: none;
   cursor: pointer;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 40%;
-      left: 0;
-      display: block;
-      width: 20px;
-      height: 2px;
-      background-color: black;
-    }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+  }
 }
 
 .main-nav__toggle--opened {
   border: none;
 
-    &::before {
-      transform: rotate(45deg);
-    }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 40%;
-      left: 0;
-      display: block;
-      width: 20px;
-      height: 2px;
-      background-color: black;
-      transform: rotate(-45deg);
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav--opened {

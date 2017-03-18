@@ -1,12 +1,12 @@
 .contacts {
   margin-bottom: 39px;
-  font-size: 15px;
+  font-size: $font-size-normal-text;
   line-height: 30px;
   color: $page-font-color;
 }
 
 .contacts-title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: $font-size-catalogs-link;
   font-weight: bold;
   color: black;
@@ -44,7 +44,11 @@
   padding-right: 39px;
 }
 
-.contacts-item-wrapper:last-of-type {
+.contacts-item-wrapper:nth-of-type(1) {
+  margin-bottom: 30px;
+}
+
+.contacts-item-wrapper:nth-of-type(2) {
   margin-bottom: 40px;
 }
 

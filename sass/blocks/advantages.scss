@@ -1,0 +1,98 @@
+.advantages {
+  margin-bottom: 35px;
+  font-size: $font-size-bold-text;
+  font-weight: bold;
+  line-height: 20px;
+  color: black;
+}
+
+.advantages__title {
+  margin-bottom: 30px;
+  font-size: $font-size-section-title;
+  line-height: 30px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.advantages__item--icon-1::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 38px;
+  margin-left: 7px;
+  margin-bottom: 18px;
+  background-image: url('../img/icon-feature-1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-2::before {
+  content: '';
+  display: block;
+  width: 47px;
+  height: 27px;
+  margin-bottom: 27px;
+  background-image: url('../img/icon-feature-3.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-3::before {
+  content: '';
+  display: block;
+  width: 34px;
+  height: 28px;
+  margin-left: 7px;
+  margin-bottom: 23px;
+  background-image: url('../img/icon-feature-5.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-4::before {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 34px;
+  margin-left: 3px;
+  margin-bottom: 18px;
+  background-image: url('../img/icon-feature-2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-5::before {
+  content: '';
+  display: block;
+  width: 55px;
+  height: 23px;
+  margin-bottom: 27px;
+  background-image: url('../img/icon-feature-4.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-6::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 32px;
+  margin-left: 3px;
+  margin-bottom: 21px;
+  background-image: url('../img/icon-feature-6.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

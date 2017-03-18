@@ -1,0 +1,68 @@
+.goods-week {
+  margin-bottom: 34px;
+  font-size: $font-size-normal-text;
+  line-height: 24px;
+  color: $page-font-color;
+}
+
+.goods-week__header {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.goods-week__title {
+  margin-bottom: 9px;
+  font-size: $font-size-section-title;
+  line-height: 30px;
+  color: black;
+}
+
+.goods-week__title-intro {
+  font-size: $font-size-bold-text;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $week-goods-font-color;
+}
+
+.goods-week__description {
+  margin-bottom: 30px;
+}
+
+.goods-week__stats-table {
+  width: 100%;
+  margin-bottom: 28px;
+  border-collapse: collapse;
+}
+
+.goods-week__stats-table tr {
+  height: 40px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $line-border-color;
+}
+
+.goods-week__stats-name {
+  padding-right: 15px;
+}
+
+.goods-week__images {
+  margin-bottom: 28px;
+}
+
+.goods-week__images img {
+  width: 260px;
+  height: 315px;
+}
+
+.goods-week__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods-week__price {
+  align-self: center;
+  margin-bottom: 28px;
+  font-size: $font-size-bold-text;
+  font-weight: bold;
+  line-height: 24px;
+}
