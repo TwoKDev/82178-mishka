@@ -1,8 +1,24 @@
-var menuButton = document.querySelector('.main-nav__toggle');
-var menuBlock = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+var navMain = document.querySelector('.main-nav');
+var modalWindow = document.querySelector('.modal-add-to-cart');
+var btnAddInCart = document.querySelector('.btn--add-in-cart');
+var navMainList = document.querySelector('.main-nav__list--nojs');
 
-menuButton.addEventListener('click', function(event){
+navMain.classList.remove('main-nav--nojs');
+navMainList.classList.remove('main-nav__list--nojs');
+
+navToggle.addEventListener('click', function(event){
   event.preventDefault();
-  menuButton.classList.toggle('main-nav__toggle--opened');
-  menuBlock.classList.toggle('main-nav--opened');
+
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+
+btnAddInCart.addEventListener('click', function(event) {
+  event.preventDefault();
 });
