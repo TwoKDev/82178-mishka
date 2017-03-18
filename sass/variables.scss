@@ -20,6 +20,6 @@ $font-size-bold-text: 17px;
 $font-size-normal-text: 15px;
 
 // размеры для media query
-$mobile-width-only: #{"(max-width: 767px)"};
-$table-width: #{"(min-width: 768px)"};
-$desktop-width: #{"(min-width: 1150px)"};
+$mobile-width-only: #{'(max-width: 767px)'};
+$table-width: #{'(min-width: 768px)'};
+$desktop-width: #{'(min-width: 1150px)'};

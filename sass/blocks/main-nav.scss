@@ -3,7 +3,19 @@
   top: 80px;
   left: 0px;
   z-index: 1;
-  display: none;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &--nojs {
+    position: static;
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -12,39 +24,49 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--nojs:first-child {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $line-border-color;
+  }
+
+  &--nojs > .main-nav__item:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .main-nav__item {
-  background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $line-border-color;
   width: 320px;
   min-height: 56px;
   padding-top: 28px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $line-border-color;
+  background-color: white;
 }
 
 .main-nav__item a {
   position: relative;
+  margin-left: 46px;
   text-decoration: none;
   font-size: $font-size-bold-text;
   font-weight: bold;
   color: black;
-  margin-left: 46px;
-}
 
-.main-nav__item-icon a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: -43px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -43px;
+    display: block;
+  }
 }
 
 .main-nav__item-icon--search a::before {
   width: 18px;
   height: 19px;
-  background-image: url("../img/icon-search.svg");
+  background-image: url('../img/icon-search.svg');
   background-repeat: no-repeat;
 }
 
@@ -52,7 +74,7 @@
   top: 4px;
   width: 21px;
   height: 19px;
-  background-image: url("../img/icon-cart.svg");
+  background-image: url('../img/icon-cart.svg');
   background-repeat: no-repeat;
 }
 
@@ -63,12 +85,12 @@
   width: 20px;
   height: 14px;
   font-size: 0;
-  background: none;
   border-width: 2px;
   border-style: solid;
   border-color: black;
   border-left: none;
   border-right: none;
+  background: none;
   outline: none;
   cursor: pointer;
 
@@ -82,29 +104,24 @@
     height: 2px;
     background-color: black;
   }
-}
 
-.main-nav__toggle--opened {
-  border: none;
+  &--opened {
+    border: none;
 
-  &::before {
-    transform: rotate(45deg);
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 0;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      transform: rotate(-45deg);
+    }
   }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 40%;
-    left: 0;
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: black;
-    transform: rotate(-45deg);
-  }
 }
-
-.main-nav--opened {
-  display: block;
-}
-

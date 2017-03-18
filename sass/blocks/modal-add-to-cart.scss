@@ -10,6 +10,14 @@
   font-size: $font-size-normal-text;
   color: $page-font-color;
   line-height: 30px;
+
+  &--closes {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal-add-to-cart__wrapper {
@@ -60,11 +68,11 @@
   border-width: 2px;
   border-style: solid;
   border-color: #ececec;
-  outline: none;
   font-size: $font-size-bold-text;
   font-weight: bold;
   line-height: 16px;
   text-align: center;
+  outline: none;
   cursor: pointer;
 
   &:hover {
@@ -93,11 +101,5 @@
   outline: none;
 }
 
-.modal-add-to-cart--closes {
-  display: none;
-}
 
-.modal-add-to-cart--opened {
-  display: block;
-}
 
