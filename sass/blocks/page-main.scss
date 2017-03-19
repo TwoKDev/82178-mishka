@@ -1,7 +1,7 @@
 .page-main__header {
   width: 320px;
   min-height: 176px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   background-color: $background-color-page-blocks;
 
   &--index-page {
@@ -22,4 +22,11 @@
     padding-top: 75px;
     min-height: 282px;
   }
+}
+
+.page-main__intro {
+  margin-bottom: 20px;
+  font-size: $font-size-goods-mini-text;
+  line-height: 24px;
+  color: $page-font-color;
 }

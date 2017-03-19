@@ -12,6 +12,20 @@ $background-color-catalogs-link-item-1: #63d1bb;
 $background-color-catalogs-link-item-2: #56c3b2;
 $background-color-page-blocks: #f1f1f1;
 
+// Цвета для формы
+$form-checkbox-indicator-color: #231f20;
+$form-radio-indicator-color: #63d1ba;
+$form-border-color-hover: #62d1ba;
+$form-border-color-down: #c7c7c7;
+$form-border-color-elements: #444444;
+
+$form-font-color-placeholder: #d5d5d5;
+$form-font-color-input: #b7b7b7;
+$form-forn-color-legend-title: #62d1ba;
+$form-input-underline-color:  #000000;
+$form-input-underline-color-hover: #62d1ba;
+$form-input-border-color-hover: #62d1ba;
+
 // размеры шрифтов
 $font-size-page-title: 27px;
 $font-size-section-title: 25px;
@@ -24,3 +38,5 @@ $font-size-goods-mini-text: 13px;
 $mobile-width-only: #{'(max-width: 767px)'};
 $table-width: #{'(min-width: 768px)'};
 $desktop-width: #{'(min-width: 1150px)'};
+
+$retina: #{'(min-resolution: 144dpi), (min-resolution: 1.5dppx)'};

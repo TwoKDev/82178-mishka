@@ -37,6 +37,22 @@
     margin-top: -3px;
     background-color: $link-underline-color;
   }
+
+  &:hover {
+    color: #46c1ae;
+
+    &:after {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: #d3ede8;
+
+    &:after {
+      background-color: #d3ede8;;
+    }
+  }
 }
 
 .contacts-address-value {

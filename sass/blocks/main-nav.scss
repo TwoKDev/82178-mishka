@@ -61,6 +61,14 @@
     left: -43px;
     display: block;
   }
+
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
 }
 
 .main-nav__item-icon--search a::before {

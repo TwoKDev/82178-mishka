@@ -7,7 +7,7 @@
   border-width: 2px;
   border-style: solid;
   border-color: $btn-border-color;
-  background-color: none;
+  background: none;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
@@ -15,4 +15,15 @@
   text-decoration: none;
   color: $page-font-color;
   cursor: pointer;
+  outline: none;
+
+  &--ghost:hover {
+    background-color: #444444;
+    color: white;
+  }
+
+  &--ghost:active {
+    background-color: #444444;
+    color: #8d8d8d;
+  }
 }
