@@ -23,11 +23,11 @@
 }
 
 .goods__header {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .goods__footer {
-  width: 205px;
+  width: 202px;
   margin-right: auto;
   margin-left: auto;
   font-weight: bold;
@@ -48,8 +48,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -76,14 +76,14 @@
 
 .goods__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   font-weight: normal;
   line-height: 30px;
 }
 
 .goods__btn-buy {
-  width: 21px;
-  height: 19px;
+  width: 19px;
+  height: 21px;
   background-image: url('../img/icon-cart.svg');
   background-repeat: no-repeat;
   font-size: 0;
