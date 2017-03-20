@@ -26,17 +26,77 @@ $form-input-underline-color:  #000000;
 $form-input-underline-color-hover: #62d1ba;
 $form-input-border-color-hover: #62d1ba;
 
-// размеры шрифтов
-$font-size-page-title: 27px;
+// размеры шрифтов mobile
 $font-size-section-title: 25px;
 $font-size-catalogs-link: 19px;
 $font-size-bold-text: 17px;
 $font-size-normal-text: 15px;
 $font-size-goods-mini-text: 13px;
 
-// размеры для media query
-$mobile-width-only: #{'min-width: 767px'};
-$table-width: #{'min-width: 768px'};
-$desktop-width: #{'min-width: 1150px'};
+/*************** Font-Size ******************/
 
-$retina: #{'(min-resolution: 144dpi), (min-resolution: 1.5dppx)'};
+  // -------- Mobile Version ------- //
+  $mobele-font-size-page-title: 27px;
+  $mobile-font-size-catalog-menu-link: 19px;
+  $mobile-font-size-main-menu-link: 17px;
+  $mobile-font-size-normal-page-text: 15px;
+
+  // -------- Table Version ------- //
+  $table-font-size-page-title: 43px;
+  $table-font-size-catalog-menu-link: 20px;
+  $table-font-size-main-menu-link-cart-and-search: 17px;
+  $table-font-size-main-menu-link-mini: 15px;
+  $table-font-size-normal-page-text: 17px;
+
+  // ------- Desktop Version ------ //
+  $desktop-font-size-page-title: 50px;
+  $desktop-font-size-catalog-menu-link: 20px;
+  $desktop-font-size-main-menu-link: 17px;
+  $desktop-font-size-normal-page-text: 17px;
+
+  // All Version
+
+/***********************************************/
+
+
+
+/*************** Line-Height *******************/
+
+  // Mobile Version
+  $mobile-line-height-page-title: 30px;
+  $mobile-line-height-catalog-menu-link: 24px;
+  $mobile-line-height-main-menu-link: 24px;
+
+  // Table Version
+  $table-line-height-page-title: 50px;
+  $table-line-height-catalog-menu-title: 30px;
+  $table-line-height-main-menu-link: 24px;
+
+  // Desktop Version
+  $desktop-line-height-page-title: 57px;
+  $desktop-line-height-catalog-menu-title: 30px;
+
+  // All Version
+
+/************************************************/
+
+
+
+/*************** Font Color *******************/
+
+  // All Version
+  $mobile-line-height-page-title: 30px;
+
+/************************************************/
+
+
+
+/*************** Sizes Media Query **************/
+
+  $mobile-width-only: #{'min-width: 767px'};
+  $table-width: #{'min-width: 768px'};
+  $desktop-width: #{'min-width: 1150px'};
+
+/***********************************************/
+
+  $retina: #{'(min-resolution: 144dpi), (min-resolution: 1.5dppx)'};

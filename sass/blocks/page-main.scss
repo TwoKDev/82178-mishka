@@ -20,10 +20,10 @@
   font-weight: bold;
   text-align: center;
   line-height: 30px;
+  margin: 0;
 
   &--index-page {
     width: 260px;
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 120px;
@@ -48,7 +48,6 @@
   }
 
   .page-main__title {
-
     &--index-page {
       display: block;
       width: 400px;
