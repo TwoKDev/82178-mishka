@@ -1,8 +1,22 @@
 .page-logo__images {
   width: 86px;
   height: 35px;
-  margin-left: auto;
+  margin-left: 90px;
   margin-right: auto;
-  margin-top: 22px;
+  margin-top: 21px;
   margin-bottom: 22px;
+}
+
+@media ($table-width) {
+  .page-logo__images {
+    margin-left: 0;
+  }
+}
+
+@media ($desktop-width) {
+  .page-logo__images {
+    position: absolute;
+    top: 5px;
+    left: 533px;
+  }
 }

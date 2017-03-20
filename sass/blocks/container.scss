@@ -1,0 +1,20 @@
+.container {
+    width: 260px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media ($table-width) {
+  .container {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media ($desktop-width) {
+  .container {
+    width: 1050px;
+  }
+}

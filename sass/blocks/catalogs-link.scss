@@ -1,11 +1,15 @@
 .catalogs-link {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  font-weight: bold;
+  font-size: $font-size-catalogs-link;
+  line-height: 24px;
 }
 
 .catalogs-link__link {
-  display: block;
-  width: 320px;
   min-height: 103px;
+  padding-left: 30px;
   background-color: $background-color-catalogs-link-item-1;
   text-decoration: none;
   color: white;
@@ -35,16 +39,8 @@
 }
 
 .catalogs-link__item {
-  position: relative;
   padding-top: 38px;
-  font-size: $font-size-catalogs-link;
-  line-height: 24px;
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-  }
+  width: 220px;
 }
 
 .catalogs-link__item--icon-interior::after {
@@ -63,4 +59,24 @@
   height: 61px;
   background-image: url('../img/icon-toy.svg');
   background-repeat: no-repeat;
+}
+
+@media ($table-width) {
+  .catalogs-link {
+    flex-direction: row;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .catalogs-link__link {
+    width: 100%;
+    padding-left: 35px;
+  }
+}
+
+@media ($desktop-width) {
+
+  .catalogs-link__link {
+    padding-left: 40px;
+  }
 }

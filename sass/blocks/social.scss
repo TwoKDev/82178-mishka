@@ -1,8 +1,5 @@
 .social {
   min-height: 80px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $line-border-color;
 }
 
 .social__list {
@@ -13,6 +10,9 @@
   min-height: 80px;
   margin: 0;
   padding: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $line-border-color;
   list-style: none;
 }
 

@@ -1,5 +1,4 @@
 .page-main__header {
-  width: 320px;
   min-height: 176px;
   margin-bottom: 30px;
   background-color: $background-color-page-blocks;
@@ -23,8 +22,11 @@
   line-height: 30px;
 
   &--index-page {
-    padding-top: 75px;
-    min-height: 282px;
+    width: 260px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px;
   }
 }
 
@@ -33,4 +35,26 @@
   font-size: $font-size-goods-mini-text;
   line-height: 24px;
   color: $page-font-color;
+}
+
+@media ($table-width) {
+  .page-main__header {
+    &--index-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 445px;
+    }
+  }
+
+  .page-main__title {
+
+    &--index-page {
+      display: block;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 100px;
+    }
+  }
 }

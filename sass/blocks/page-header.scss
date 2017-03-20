@@ -1,6 +1,9 @@
 .page-header {
   position: relative;
-  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   min-height: 78px;
   border-width: 1px;
   border-style: solid;
@@ -8,4 +11,14 @@
   border-left: none;
   border-right: none;
   background-color: white;
+
+  &--nojs {
+    flex-direction: column;
+  }
+}
+
+@media ($table-width) {
+  .page-header {
+    min-height: 88px;
+  }
 }
