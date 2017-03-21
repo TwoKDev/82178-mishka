@@ -1,44 +1,44 @@
 .goods-week {
-  margin-bottom: 34px;
-  font-size: $font-size-normal-text;
-  line-height: 24px;
-  color: $page-font-color;
+  padding-bottom: 34px;
+  line-height: $mobile-line-height-normal-goods-week-text;
+
+  @include inner();
 }
 
 .goods-week__header {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   font-weight: bold;
 }
 
 .goods-week__title {
-  margin-bottom: 9px;
-  font-size: $font-size-section-title;
-  line-height: 30px;
-  color: black;
+  font-size:  $mobile-font-size-categories-title;
+  line-height: $mobile-line-height-categories-title;
+  color: $all-color-page-bold-text;
 }
 
 .goods-week__title-intro {
-  font-size: $font-size-bold-text;
+  font-size: $all-font-size-sub-title-goods-week;
+  line-height: $mobile-line-height-sub-title-goods-week;
   text-transform: uppercase;
-  line-height: 20px;
-  color: $week-goods-font-color;
+  color: $all-color-sub-title-goods-week;
 }
 
 .goods-week__description {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .goods-week__stats-table {
-  width: 100%;
-  margin-bottom: 28px;
+  width: 260px;
   border-collapse: collapse;
+  font-size: $all-font-size-normal-tables-text;
+  line-height: $all-line-height-normal-tables-text;
 }
 
 .goods-week__stats-table tr {
-  height: 40px;
+  min-height: 40px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: $line-border-color;
+  border-bottom-color: $all-color-page-borders;
 }
 
 .goods-week__stats-name {
@@ -46,7 +46,8 @@
 }
 
 .goods-week__images {
-  margin-bottom: 28px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .goods-week__images img {
@@ -62,7 +63,7 @@
 .goods-week__price {
   align-self: center;
   margin-bottom: 28px;
-  font-size: $font-size-bold-text;
+  font-size: $mobile-font-size-price-goods-week;
   font-weight: bold;
-  line-height: 24px;
+  line-height: $all-line-height-price-goods-week;
 }

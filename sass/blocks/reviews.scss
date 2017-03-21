@@ -1,38 +1,37 @@
 .reviews {
-  margin-bottom: 44px;
-  font-size: $font-size-normal-text;
-  line-height: 30px;
-  color: $page-font-color;
+  padding-bottom: 44px;
+
+  @include inner();
 }
 
 .reviews__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-size: $font-size-section-title;
+  padding-bottom: 30px;
+  font-size: $mobile-font-size-categories-title;
   font-weight: bold;
-  color: black;
+  line-height: $mobile-line-height-categories-title;
+  color: $all-color-page-bold-text;
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .reviews__text-review {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .reviews__author-name {
   font-weight: bold;
   font-style: normal;
-  color: black;
+  color: $all-color-page-bold-text;
 }
 
 .reviews__btn-wrapper {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .reviews__btn {
@@ -41,10 +40,10 @@
   font-size: 0;
   border-width: 1px;
   border-style: solid;
-  border-color: $line-border-color;
+  border-color: $all-color-page-borders;
   background: none;
-  outline: none;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     &:before {
@@ -69,7 +68,6 @@
 
 .reviews__btn--prev {
   position: relative;
-  border-right: none;
 
   &:before {
     content: '';
@@ -79,8 +77,11 @@
     display: block;
     width: 12px;
     height: 12px;
-    border-left: 3px solid black;
-    border-bottom: 3px solid black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-top: none;
+    border-right: none;
     transform: rotate(45deg);
   }
 
@@ -107,8 +108,11 @@
     display: block;
     width: 12px;
     height: 12px;
-    border-right: 3px solid black;
-    border-top: 3px solid black;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-left: none;
+    border-bottom: none;
     transform: rotate(45deg);
 
     &:hover {

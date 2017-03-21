@@ -1,22 +1,19 @@
 .page-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
-  font-size: $font-size-bold-text;
-  font-weight: bold;
-  line-height: 18px;
+  padding-bottom: 55px;
 }
 
 .page-form__fieldset {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
+  padding-bottom: 30px;
   border: none;
 
   &:last-of-type {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -26,9 +23,11 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  line-height: 16px;
+  font-size: $all-font-size-form-legend-title;
+  font-weight: bold;
+  line-height: $all-line-height-form-legend-title;
   text-transform: uppercase;
-  color: $form-forn-color-legend-title;
+  color: $all-color-form-legend-title;
 
   &::after {
     content: '';
@@ -37,7 +36,7 @@
     right: 0;
     width: 198px;
     height: 1px;
-    background-color: $form-forn-color-legend-title;
+    background-color: $all-color-form-legend-title;
   }
 
   &--email {
@@ -79,6 +78,10 @@
   display: flex;
   align-items: center;
   width: 70%;
+  font-size: $mobile-font-size-form-label-name;
+  font-weight: bold;
+  line-height: $all-line-height-form-label-name;
+  color: $all-color-page-bold-text;
 }
 
 .page-form__input-indicator {
@@ -91,7 +94,7 @@
   margin-right: 23px;
   border-width: 2px;
   border-style: solid;
-  border-color: $form-border-color-elements;
+  border-color: $all-color-form-border-checbox-radio;
 
   &--radio {
     border-radius: 100%;
@@ -111,7 +114,7 @@
       width: 16px;
       height: 16px;
       border-radius: 100%;
-      background-color: $form-radio-indicator-color;
+      background-color: $all-color-form-radio-indicator;
     }
   }
 }
@@ -129,7 +132,7 @@
       height: 18px;
       border-width: 2px;
       border-style: solid;
-      border-color: $form-checkbox-indicator-color;
+      border-color: $all-color-form-checkbox-indicator;
       border-left: none;
       border-top: none;
       transform: rotate(45deg);
@@ -145,8 +148,8 @@
   border: none;
   border-bottom-width: 2px;
   border-bottom-style: solid;
-  border-bottom-color: $form-input-underline-color;
-  color: $form-font-color-input;
+  border-bottom-color: $all-color-form-underline-input;
+  color: $all-color-page-normal-text;
   outline: none;
 
   &:hover {
@@ -156,10 +159,6 @@
   &:focus {
     border-bottom-color: $form-input-underline-color-hover;
   }
-}
-
-.page-form__input-field::placeholder {
-  color: $form-font-color-placeholder;
 }
 
 .page-form__textarea {
@@ -169,9 +168,9 @@
   padding-top: 13px;
   border-width: 2px;
   border-style: solid;
-  border-color: $form-border-color-elements;
+  border-color: $all-color-form-border-textarea;
   resize: vertical;
-  color: $form-font-color-input;
+  color: $all-color-page-normal-text;
   outline: none;
 
   &:hover {
@@ -183,14 +182,18 @@
   }
 }
 
-.page-form__textarea::placeholder {
-  color: $form-font-color-placeholder;
+.page-form__input-field::placeholder {
+  color: $all-color-form-placeholder;
 }
 
+.page-form__textarea::placeholder {
+  color: $all-color-form-placeholder;
+}
+
+
 .page-form__intro {
-  margin-bottom: 30px;
-  font-size: 14px;
+  padding-bottom: 30px;
+  font-size: $mobile-font-size-form-footer-text-intro;
   font-weight: normal;
-  line-height: 16px;
-  color: $page-font-color;
+  line-height: $mobile-line-height-form-footer-text-intro;
 }

@@ -1,82 +1,73 @@
 .catalogs-link {
   display: flex;
+
   flex-direction: column;
-  list-style: none;
+  font-size: $mobile-font-size-catalog-menu-link;
   font-weight: bold;
-  font-size: $font-size-catalogs-link;
-  line-height: 24px;
+  line-height: $mobile-line-height-catalog-menu-link;
+  list-style: none;
+  color: $all-color-text-catalog-menu;
+
+  @include inner();
+
+  width: 320px;
 }
 
 .catalogs-link__link {
+  display: flex;
+  align-items: center;
+  width: 100%;
   min-height: 103px;
-  padding-left: 30px;
-  background-color: $background-color-catalogs-link-item-1;
   text-decoration: none;
-  color: white;
+  color: $all-color-text-catalog-menu;
 
-  &:hover {
-    padding-bottom: 5px;
-    background-color: #59d5bc;
+  &--interior {
+    background-color: $all-color-bg-catalog-menu-item-1;
   }
 
-  &:active {
-    padding-bottom: 5px;
-    background-color: #59d5bc;
-    color: #97e2d2;
-  }
-}
-
-.catalogs-link__link:nth-child(2n) {
-  background-color: $background-color-catalogs-link-item-2;
-
-  &:hover {
-    background-color: #46c1ae;
-  }
-
-  &:active {
-    background-color: #46c1ae;
+  &--toy {
+    background-color: $all-color-bg-catalog-menu-item-2;
   }
 }
 
 .catalogs-link__item {
-  padding-top: 38px;
-  width: 220px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.catalogs-link__item--icon-interior::after {
-  top: 23px;
-  right: 6px;
-  width: 41px;
-  height: 62px;
-  background-image: url('../img/icon-interior.svg');
-  background-repeat: no-repeat;
+.catalogs-link__item-title {
+  width: 170px;
 }
 
-.catalogs-link__item--icon-toy::after {
-  top: 20px;
-  right: -4px;
-  width: 61px;
-  height: 61px;
-  background-image: url('../img/icon-toy.svg');
-  background-repeat: no-repeat;
+.catalogs-link__item-icon {
+  &--interior {
+    margin-right: 6px;
+  }
 }
+
 
 @media ($table-width) {
   .catalogs-link {
     flex-direction: row;
-    margin-right: 50px;
-    margin-left: 50px;
   }
 
-  .catalogs-link__link {
-    width: 100%;
+  .catalogs-link__item {
     padding-left: 35px;
+    padding-right: 30px;
   }
 }
 
 @media ($desktop-width) {
 
-  .catalogs-link__link {
+  .catalogs-link__item {
     padding-left: 40px;
+    padding-right: 30px;
+  }
+
+  .catalogs-link__item-title {
   }
 }

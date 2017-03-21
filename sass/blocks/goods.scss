@@ -3,10 +3,7 @@
   margin-bottom: 30px;
   border-width: 1px;
   border-style: solid;
-  border-color: $line-border-color;
-  font-size: $font-size-goods-mini-text;
-  line-height: 30px;
-  color: $page-font-color;
+  border-color: $all-color-page-borders;
 
   &:hover {
     box-shadow: 0px 7px 15px 0px rgba(236,236,236,1);
@@ -30,8 +27,6 @@
   width: 202px;
   margin-right: auto;
   margin-left: auto;
-  font-weight: bold;
-  line-height: 24px;
 }
 
 .goods__footer-wrapper {
@@ -41,7 +36,7 @@
   &--header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: $line-border-color;
+    border-bottom-color: $all-color-page-borders;
   }
 
   &--footer {
@@ -54,14 +49,14 @@
 }
 
 .goods__link-title {
-  margin-bottom: 5px;
   text-decoration: none;
 }
 
 .goods__title {
   margin: 0;
-  font-size: $font-size-bold-text;
+  font-size: $mobile-font-size-goods-title;
   font-weight: bold;
+  line-height: $all-line-height-goods-title;
   color: black;
   outline: none;
 
@@ -74,25 +69,25 @@
   }
 }
 
-.goods__description {
+.goods__stats {
   margin: 0;
-  margin-bottom: 19px;
-  font-weight: normal;
-  line-height: 30px;
+  padding-bottom: 19px;
+  font-size: $mobile-font-size-goods-stats;
+  line-height: $all-line-height-goods-stats;
 }
 
 .goods__btn-buy {
   width: 19px;
   height: 21px;
-  background-image: url('../img/icon-cart.svg');
-  background-repeat: no-repeat;
-  font-size: 0;
+  font-size: 5;
   outline: none;
   cursor: pointer;
 }
 
 .goods__price {
   margin: 0;
-  font-size: $font-size-normal-text;
+  font-size: $mobile-font-size-goods-price;
+  font-weight: bold;
+  line-height: $all-line-height-goods-price;
   color: black;
 }

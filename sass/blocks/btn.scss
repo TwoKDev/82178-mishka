@@ -4,26 +4,59 @@
   align-items: center;
   width: 260px;
   min-height: 48px;
+  margin: 0 auto;
   border-width: 2px;
   border-style: solid;
-  border-color: $btn-border-color;
+  border-color: $all-color-button-border;
   background: none;
-  font-size: 18px;
+  font-size: $all-font-size-button;
   font-weight: bold;
-  line-height: 20px;
+  line-height: $all-line-height-button;
   text-transform: uppercase;
   text-decoration: none;
-  color: $page-font-color;
+  color: $all-color-button-text;
   cursor: pointer;
   outline: none;
 
+  &--modal-window {
+    width: 260px;
+    min-height: 52px;
+    border: none;
+    background-color: $all-color-bg-modal-window-button;
+    color: $all-color-modal-window-button-text;
+  }
+
   &--ghost:hover {
-    background-color: #444444;
-    color: white;
+    background-color: $all-hover-button-bg-color;
+    color: $all-hover-button-text-color;
   }
 
   &--ghost:active {
-    background-color: #444444;
-    color: #8d8d8d;
+    background-color: $all-active-button-bg-color;
+    color: $all-active-button-text-color;
+  }
+}
+
+@media ($table-width) {
+  .btn {
+    &--buy {
+      width: 288px;
+    }
+
+    &--write-reviews {
+      width: 171px;
+    }
+
+    &--write-in-our {
+      width: 226px;
+    }
+
+    &--form-btn {
+      width: 226;
+    }
+
+    &--modal-window {
+      width: 350px;
+    }
   }
 }

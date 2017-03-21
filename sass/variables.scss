@@ -1,45 +1,29 @@
-// цвета на странице
-$line-border-color: #e5e4e2;
-$page-items-color: #63d1bb;
-$social-btn-color: #221f1f;
-$btn-border-color: #444444;
-$btn-bg-modal-window-color: #63d1bb;
-$border-color-checked: #63d1bb;
-$page-font-color: #444444;
-$week-goods-font-color: #63d1bb;
-$link-underline-color: #63d1ba;
-$background-color-catalogs-link-item-1: #63d1bb;
-$background-color-catalogs-link-item-2: #56c3b2;
-$background-color-page-blocks: #f1f1f1;
-
 // Цвета для формы
-$form-checkbox-indicator-color: #231f20;
-$form-radio-indicator-color: #63d1ba;
 $form-border-color-hover: #62d1ba;
 $form-border-color-down: #c7c7c7;
-$form-border-color-elements: #444444;
 
-$form-font-color-placeholder: #d5d5d5;
-$form-font-color-input: #444444;
-$form-forn-color-legend-title: #62d1ba;
-$form-input-underline-color:  #000000;
 $form-input-underline-color-hover: #62d1ba;
 $form-input-border-color-hover: #62d1ba;
-
-// размеры шрифтов mobile
-$font-size-section-title: 25px;
-$font-size-catalogs-link: 19px;
-$font-size-bold-text: 17px;
-$font-size-normal-text: 15px;
-$font-size-goods-mini-text: 13px;
 
 /*************** Font-Size ******************/
 
   // -------- Mobile Version ------- //
-  $mobele-font-size-page-title: 27px;
+  $mobile-font-size-page-title: 27px;
   $mobile-font-size-catalog-menu-link: 19px;
   $mobile-font-size-main-menu-link: 17px;
   $mobile-font-size-normal-page-text: 15px;
+  $mobile-font-size-categories-title: 25px;
+  $mobile-font-size-price-goods-week: 17px;
+  $mobile-font-size-advantages-text: 17px;
+  $mobile-font-size-goods-title: 17px;
+  $mobile-font-size-goods-stats: 13px;
+  $mobile-font-size-goods-price: 15px;
+  $mobile-font-size-production-process-text: 13px;
+  $mobile-font-size-form-header-text-intro: 13px;
+  $mobile-font-size-form-footer-text-intro: 14px;
+  $mobile-font-size-form-label-name: 17px;
+  $mobile-font-size-modal-window-title: 25px;
+  $mobile-font-size-modal-window-text: 15px;
 
   // -------- Table Version ------- //
   $table-font-size-page-title: 43px;
@@ -47,16 +31,50 @@ $font-size-goods-mini-text: 13px;
   $table-font-size-main-menu-link-cart-and-search: 17px;
   $table-font-size-main-menu-link-mini: 15px;
   $table-font-size-normal-page-text: 17px;
+  $table-font-size-categories-title: 43px;
+  $table-font-size-price-goods-week: 20px;
+  $table-font-size-advantages-text: 20px;
+  $table-font-size-goods-title: 20px;
+  $table-font-size-goods-stats: 15px;
+  $table-font-size-goods-price: 17px;
+  $table-font-size-production-process-text: 15px;
+  $table-font-size-form-header-text-intro: 17px;
+  $table-font-size-form-footer-text-intro: 17px;
+  $table-font-size-form-label-name: 19px;
+  $table-font-size-modal-window-title: 30px;
+  $table-font-size-modal-window-text: 17px;
 
   // ------- Desktop Version ------ //
   $desktop-font-size-page-title: 50px;
   $desktop-font-size-catalog-menu-link: 20px;
   $desktop-font-size-main-menu-link: 17px;
   $desktop-font-size-normal-page-text: 17px;
+  $desktop-font-size-categories-title: 53px;
+  $desktop-font-size-price-goods-week: 20px;
+  $desktop-font-size-advantages-text: 20px;
+  $desktop-font-size-goods-title: 20px;
+  $desktop-font-size-goods-stats: 15px;
+  $desktop-font-size-goods-price: 17px;
+  $desktop-font-size-production-process-text: 15px;
+  $desktop-font-size-form-header-text-intro: 17px;
+  $desktop-font-size-form-footer-text-intro: 17px;
+  $desktop-font-size-form-label-name: 19px;
+  $desktop-font-size-modal-window-title: 30px;
+  $desktop-font-size-modal-window-text: 17px;
 
   // All Version
+  $all-font-size-button: 17px;
+  $all-font-size-main-nav-menu-link: 17px;
+  $all-font-size-mini-nav-menu-link: 15px;
+  $all-font-size-sub-title-goods-week: 17px;
+  $all-font-size-normal-tables-text: 15px;
+  $all-font-size-normal-copyright-text: 19px;
+  $all-font-size-form-legend-title: 17px;
+  $all-font-size-modal-window-checkbox: 17px;
 
 /***********************************************/
+
+
 
 
 
@@ -66,28 +84,129 @@ $font-size-goods-mini-text: 13px;
   $mobile-line-height-page-title: 30px;
   $mobile-line-height-catalog-menu-link: 24px;
   $mobile-line-height-main-menu-link: 24px;
+  $mobile-line-height-categories-title: 30px;
+  $mobile-line-height-sub-title-goods-week: 20px;
+  $mobile-line-height-normal-goods-week-text: 24px;
+  $mobile-line-height-advantages-text: 20px;
+  $mobile-line-height-production-process-text: 24px;
+  $mobile-line-height-form-header-text-intro: 24px;
+  $mobile-line-height-form-footer-text-intro: 16px;
+  $mobile-line-height-modal-window-title: 30px;
 
   // Table Version
   $table-line-height-page-title: 50px;
   $table-line-height-catalog-menu-title: 30px;
   $table-line-height-main-menu-link: 24px;
+  $table-line-height-categories-title: 50px;
+  $table-line-height-sub-title-goods-week: 17px;
+  $table-line-height-normal-goods-week-text: 30px;
+  $table-line-height-advantages-text: 22px;
+  $table-line-height-production-process-text: 30px;
+  $table-line-height-form-header-text-intro: 30px;
+  $table-line-height-form-footer-text-intro: 30px;
+  $table-line-height-modal-window-title: 57px;
 
   // Desktop Version
   $desktop-line-height-page-title: 57px;
   $desktop-line-height-catalog-menu-title: 30px;
+  $desktop-line-height-categories-title: 57px;
+  $desktop-line-height-sub-title-goods-week: 17px;
+  $desktop-line-height-normal-goods-week-text: 30px;
+  $desktop-line-height-advantages-text: 22px;
+  $desktop-line-height-production-process-text: 30px;
+  $desktop-line-height-form-header-text-intro: 30px;
+  $desktop-line-height-form-footer-text-intro: 30px;
+  $desktop-line-height-modal-window-title: 57px;
 
   // All Version
+  $all-line-height-normal-page-text: 30px;
+  $all-line-height-main-nav-menu-link: 24px;
+  $all-line-height-button: 20px;
+  $all-line-height-normal-tables-text: 20px;
+  $all-line-height-price-goods-week: 24px;
+  $all-line-height-normal-reviews-text: 30px;
+  $all-line-height-normal-contacts-text: 30px;
+  $all-line-height-normal-copyright-text: 18px;
+  $all-line-height-goods-title: 24px;
+  $all-line-height-goods-stats: 30px;
+  $all-line-height-goods-price: 24px;
+  $all-line-height-form-legend-title: 16px;
+  $all-line-height-form-placeholder: 18px;
+  $all-line-height-form-label-name: 18px;
+  $all-line-height-modal-window-text: 30px;
+  $all-line-height-modal-window-checkbox: 16px;
 
 /************************************************/
+
+
 
 
 
 /*************** Font Color *******************/
 
-  // All Version
-  $mobile-line-height-page-title: 30px;
+  // Font
+  $all-color-page-bold-text: #000000;
+  $all-color-page-normal-text: #444444;
+  $all-color-text-catalog-menu: #ffffff;
+  $all-color-sub-title-goods-week: #63d1bb;
+  $all-color-underline-email-contacts: #62d1ba;
+  $all-color-form-legend-title: #63d1bb;
+  $all-color-form-placeholder: #d2d2d2;
+  $all-color-form-checkbox-indicator: #000000;
+  $all-color-form-radio-indicator: #62d1ba;
+  $all-color-button-text: #444444;
+  $all-color-modal-window-button-text: #ffffff;
+
+  // Background
+  $all-color-bg-catalog-menu-item-1: #63d1bb;
+  $all-color-bg-catalog-menu-item-2: #56c3b2;
+  $all-color-bg-header-block-index-page-title: #f9f9f9;
+  $all-color-bg-header-block-title: #f1f1f1;
+  $all-color-bg-footer-block: #f1f1f1;
+  $all-color-bg-modal-window-button: #63d1bb;
+
+  // Border:
+  $all-color-page-borders: #ececec;
+  $all-color-button-border: #444444;
+  $all-color-form-border-textarea: #444444;
+  $all-color-form-border-checbox-radio: #444444;
+  $all-color-form-underline-input: #000000;
 
 /************************************************/
+
+
+
+
+
+/***************** Hover Effects ****************/
+
+  $all-hover-button-bg-color: #444444;
+  $all-hover-button-text-color: #ffffff;
+
+/************************************************/
+
+
+
+
+
+/***************** Active Effects ****************/
+
+  $all-active-button-bg-color: #444444;
+  $all-active-button-text-color: #8d8d8d;
+
+/************************************************/
+
+
+
+
+
+/***************** Focus Input Effects **********/
+
+
+
+/************************************************/
+
+
 
 
 

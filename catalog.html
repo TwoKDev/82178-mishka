@@ -2,8 +2,9 @@
 <html lang='ru'>
   <head>
     <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>HTML Academy: Мишка</title>
-    <link rel='stylesheet' href='css/normalize.css'>
+    <link rel='stylesheet' href='css/style.css'>
   </head>
   <body class='page-body'>
 
@@ -61,7 +62,7 @@
         <footer class='goods__footer'>
           <div class='goods__footer-wrapper  goods__footer-wrapper--header'>
             <a class='goods__link-title' href='#'><h1 class='goods__title'>Зайчик-попрыгайчик</h1></a>
-            <p class='goods__description'>Рост 30 см, вес 200 г</p>
+            <p class='goods__stats'>Рост 30 см, вес 200 г</p>
           </div>
           <div class='goods__footer-wrapper  goods__footer-wrapper--footer'>
             <p class='goods__price'>1 200 руб.</p>
@@ -81,7 +82,7 @@
         <footer class='goods__footer'>
           <div class='goods__footer-wrapper  goods__footer-wrapper--header'>
             <a class='goods__link-title' href='#'><h1 class='goods__title'>Корзинка для белья</h1></a>
-            <p class='goods__description'>Диаметр 15 см, высота 10 см</p>
+            <p class='goods__stats'>Диаметр 15 см, высота 10 см</p>
           </div>
           <div class='goods__footer-wrapper  goods__footer-wrapper--footer'>
             <p class='goods__price'>690 руб.</p>
@@ -101,7 +102,7 @@
         <footer class='goods__footer'>
           <div class='goods__footer-wrapper  goods__footer-wrapper--header'>
             <a class='goods__link-title' href='#'><h1 class='goods__title'>Большая корзинка для игрушек</h1></a>
-            <p class='goods__description'>Диаметр 30 см, высота 30 см</p>
+            <p class='goods__stats'>Диаметр 30 см, высота 30 см</p>
           </div>
           <div class='goods__footer-wrapper  goods__footer-wrapper--footer'>
             <p class='goods__price'>1 500 руб.</p>
@@ -148,7 +149,7 @@
     </footer>
 
     <section class='modal-add-to-cart modal-add-to-cart--opened'>
-      <div class='modal-add-to-cart__wrapper  '>
+      <div class='modal-add-to-cart__wrapper'>
         <h2 class='modal-add-to-cart__title'>Добавить в корзину</h2>
         <p class='modal-add-to-cart__text'>Выберите размер:</p>
         <form class='modal-add-to-cart__form' id='form-cart' action='https://echo.htmlacademy.ru' method='post'>
@@ -164,7 +165,7 @@
             <input class='modal-add-to-cart__radio-size' id='size-l' type='radio' name='size' value='size-l'>
             <span class='modal-add-to-cart__label-text'>L</span>
           </label>
-          <button class='modal-add-to-cart__btn  btn' type='submit'>Добавить</button>
+          <button class='modal-add-to-cart__btn  btn  btn--modal-window' type='submit'>Добавить</button>
         </form>
       </div>
     </section>

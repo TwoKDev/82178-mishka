@@ -3,25 +3,26 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  min-height: 79px;
   padding-left: 20px;
   padding-right: 20px;
-  min-height: 79px;
-}
-
-.copyright__title {
-  margin-left: 20px;
-  font-size: $font-size-catalogs-link;
-  font-weight: bold;
-  line-height: 18px;
+  color: $all-color-page-bold-text;
 }
 
 .copyright__link {
-  width: 27px;
-  height: 34px;
-  margin-top: 5px;
-  margin-right: 20px;
-  font-size: 0px;
-  background-image: url('../img/logo-htmlacademy.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  text-decoration: none;
+  color: $all-color-page-bold-text;
+  outline: none;
 }
+
+.copyright__title-name {
+  padding-left: 20px;
+  font-size: $all-font-size-normal-copyright-text;
+  font-weight: bold;
+  line-height: $all-line-height-normal-copyright-text;
+}
+
+.copyright__logo {
+
+}
+

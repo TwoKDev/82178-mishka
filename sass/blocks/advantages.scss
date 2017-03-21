@@ -1,15 +1,18 @@
 .advantages {
-  margin-bottom: 35px;
-  font-size: $font-size-bold-text;
+  padding-bottom: 35px;
+  font-size: $mobile-font-size-advantages-text;
   font-weight: bold;
-  line-height: 20px;
-  color: black;
+  line-height: $mobile-line-height-advantages-text;
+  color: $all-color-page-bold-text;
+
+  @include inner();
 }
 
 .advantages__title {
-  margin-bottom: 30px;
-  font-size: $font-size-section-title;
-  line-height: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: $mobile-font-size-categories-title;
+  line-height: $mobile-line-height-categories-title;
 }
 
 .advantages__list {
@@ -23,7 +26,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   text-decoration: none;
 
   &--icon-1::before {
@@ -31,8 +34,8 @@
     display: block;
     width: 33px;
     height: 38px;
-    margin-left: 7px;
-    margin-bottom: 18px;
+    padding-left: 7px;
+    padding-bottom: 18px;
     background-image: url('../img/icon-feature-1.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -43,7 +46,7 @@
     display: block;
     width: 47px;
     height: 27px;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
     background-image: url('../img/icon-feature-3.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -54,8 +57,8 @@
     display: block;
     width: 34px;
     height: 28px;
-    margin-left: 7px;
-    margin-bottom: 23px;
+    padding-left: 7px;
+    padding-bottom: 23px;
     background-image: url('../img/icon-feature-5.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -66,8 +69,8 @@
     display: block;
     width: 35px;
     height: 34px;
-    margin-left: 3px;
-    margin-bottom: 18px;
+    padding-left: 3px;
+    padding-bottom: 18px;
     background-image: url('../img/icon-feature-2.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +81,7 @@
     display: block;
     width: 55px;
     height: 23px;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
     background-image: url('../img/icon-feature-4.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -89,10 +92,50 @@
     display: block;
     width: 33px;
     height: 32px;
-    margin-left: 3px;
-    margin-bottom: 21px;
+    padding-left: 3px;
+    padding-bottom: 21px;
     background-image: url('../img/icon-feature-6.svg');
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media ($table-width) {
+  .advantages {
+    padding-bottom: 35px;
+    font-size: $table-font-size-advantages-text;
+    font-weight: bold;
+    line-height: $table-line-height-advantages-text;
+    color: $all-color-page-bold-text;
+  }
+
+  .advantages__title {
+    font-size: $table-font-size-categories-title;
+    line-height: $table-line-height-categories-title;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    min-width: 300px;
+  }
+}
+
+@media ($desktop-width) {
+  .advantages {
+    padding-bottom: 35px;
+    font-size: $desktop-font-size-advantages-text;
+    font-weight: bold;
+    line-height: $desktop-line-height-advantages-text;
+    color: $all-color-page-bold-text;
+  }
+
+  .advantages__title {
+    font-size: $desktop-font-size-categories-title;
+    line-height: $desktop-line-height-categories-title;
   }
 }

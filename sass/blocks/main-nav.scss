@@ -29,7 +29,7 @@
   &--nojs:first-child {
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: $line-border-color;
+    border-top-color: $all-color-page-borders;
   }
 
   &--nojs > .main-nav__item:last-of-type {
@@ -45,7 +45,7 @@
   padding-left: 75px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: $line-border-color;
+  border-bottom-color: $all-color-page-borders;
   background-color: white;
   box-sizing: border-box;
 
@@ -66,9 +66,10 @@
 .main-nav__item-link {
   display: flex;
   text-decoration: none;
-  font-size: $font-size-bold-text;
+  font-size: $all-font-size-main-nav-menu-link;
   font-weight: bold;
-  color: black;
+  line-height: $all-line-height-main-nav-menu-link;
+  color: $all-color-page-bold-text;
 
   &:hover {
     color: #8d8d8d;
@@ -173,7 +174,6 @@
       border-color: #e7e7e7;
       border-top: 0;
       border-bottom: 0;
-      font-size: 5px;
     }
 
     &--cart {
@@ -185,25 +185,23 @@
     margin: 0;
 
     &--1 {
-      font-size: 15px;
+      font-size: $all-font-size-mini-nav-menu-link;
     }
 
     &--2 {
-      font-size: 15px;
+      font-size: $all-font-size-mini-nav-menu-link;
     }
 
     &--search {
-      font-size: 0px;
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       width: 100%;
+      font-size: 0px;
     }
 
     &--cart {
-      font-size: 17px;
-      line-height: 24px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -231,7 +229,7 @@
       position: static;
       border-right-width: 1px;
       border-right-style: solid;
-      border-right-color: #e7e7e7;
+      border-right-color: $all-color-page-borders;
       padding: 0;
       padding-right: 35px;
     }
@@ -240,19 +238,19 @@
       position: static;
       padding: 0;
       padding-left: 35px;
-      margin-right: 337px;
+      margin-right: 335px;
     }
   }
 
   .main-nav__item-link {
     &--1 {
       align-self: center;
-      font-size: 17px;
+      font-size: $all-font-size-main-nav-menu-link;
     }
 
     &--2 {
       align-self: center;
-      font-size: 17px;
+      font-size: $all-font-size-main-nav-menu-link;
     }
   }
 }
