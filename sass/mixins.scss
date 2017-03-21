@@ -1,1 +1,16 @@
+@mixin inner()  {
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 
+  @media ($table-width) {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($desktop-width) {
+    width: 1050px;
+  }
+}
