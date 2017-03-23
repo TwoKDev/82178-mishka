@@ -1,16 +1,16 @@
 .catalogs-link {
-  display: flex;
+  @include inner();
 
+  display: flex;
   flex-direction: column;
+  width: 320px;
+  padding: 0;
+
   font-size: $mobile-font-size-catalog-menu-link;
   font-weight: bold;
   line-height: $mobile-line-height-catalog-menu-link;
   list-style: none;
   color: $all-color-text-catalog-menu;
-
-  @include inner();
-
-  width: 320px;
 }
 
 .catalogs-link__link {
@@ -18,6 +18,7 @@
   align-items: center;
   width: 100%;
   min-height: 103px;
+
   text-decoration: none;
   color: $all-color-text-catalog-menu;
 
@@ -53,6 +54,9 @@
 @media ($table-width) {
   .catalogs-link {
     flex-direction: row;
+
+    font-size: $table-font-size-catalog-menu-link;
+    line-height: $table-line-height-catalog-menu-link;
   }
 
   .catalogs-link__item {
@@ -62,12 +66,13 @@
 }
 
 @media ($desktop-width) {
+  .catalogs-link {
+    font-size: $desktop-font-size-catalog-menu-link;
+    line-height: $desktop-line-height-catalog-menu-link;
+  }
 
   .catalogs-link__item {
     padding-left: 40px;
     padding-right: 30px;
-  }
-
-  .catalogs-link__item-title {
   }
 }

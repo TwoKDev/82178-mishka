@@ -1,5 +1,6 @@
 .social {
   min-height: 80px;
+  width: 260px;
 }
 
 .social__list {
@@ -10,6 +11,9 @@
   min-height: 80px;
   margin: 0;
   padding: 0;
+  padding-left: 39px;
+  padding-right: 39px;
+
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: $all-color-page-borders;
@@ -18,32 +22,27 @@
 
 .social__link {
   display: block;
-  text-decoration: none;
-  font-size: 0;
+  padding: 0;
+
+  &--instagram {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 29px;
+  }
+
+  &--twitter {
+    width: 24px;
+    height: 20px;
+
+  }
 }
 
-.social__link--instagram {
-  width: 22px;
-  height: 21px;
-  margin-left: 40px;
-  background-image: url('../img/icon-insta.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--facebook {
-  width: 15px;
-  height: 29px;
-  background-image: url('../img/icon-fb.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__link--twitter {
-  width: 24px;
-  height: 20px;
-  margin-right: 40px;
-  background-image: url('../img/icon-twitter.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+@media ($table-width) {
+  .social__list {
+    border: none;
+  }
 }

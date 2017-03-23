@@ -1,39 +1,57 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 260px;
-  min-height: 48px;
+  display: block;
+  width: 256px;
   margin: 0 auto;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $all-color-button-border;
-  background: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
   font-size: $all-font-size-button;
   font-weight: bold;
   line-height: $all-line-height-button;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: $all-color-button-text;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: $all-color-button-border;
+  background: none;
+
   cursor: pointer;
   outline: none;
 
   &--modal-window {
     width: 260px;
-    min-height: 52px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: $all-color-modal-window-button-text;
+
     border: none;
     background-color: $all-color-bg-modal-window-button;
-    color: $all-color-modal-window-button-text;
+  }
+
+  &--production-process {
+    width: auto;
+    margin-left: 33px;
+    margin-right: 33px;
+  }
+
+  &--form-submit {
+    width: 258px;
   }
 
   &--ghost:hover {
-    background-color: $all-hover-button-bg-color;
     color: $all-hover-button-text-color;
+
+    background-color: $all-hover-button-bg-color;
   }
 
   &--ghost:active {
-    background-color: $all-active-button-bg-color;
     color: $all-active-button-text-color;
+
+    background-color: $all-active-button-bg-color;
   }
 }
 
@@ -44,6 +62,8 @@
     }
 
     &--write-reviews {
+      margin: 0;
+      order: 2;
       width: 171px;
     }
 
@@ -51,12 +71,36 @@
       width: 226px;
     }
 
-    &--form-btn {
-      width: 226;
+    &--form-submit {
+      width: 230px;
+      margin: 0;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    &--production-process {
+      order: 4;
+      margin-left: 41px;
+      margin-right: 41px;
     }
 
     &--modal-window {
       width: 350px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .btn {
+    &--write-in-our {
+      margin: 0;
+    }
+
+    &--production-process {
+      float: right;
+      width: 227px;
+      margin-right: 56px;
+      margin-bottom: 30px;
     }
   }
 }

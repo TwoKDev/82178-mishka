@@ -45,7 +45,7 @@ $form-input-border-color-hover: #62d1ba;
   $table-font-size-modal-window-text: 17px;
 
   // ------- Desktop Version ------ //
-  $desktop-font-size-page-title: 50px;
+  $desktop-font-size-page-title: 52px;
   $desktop-font-size-catalog-menu-link: 20px;
   $desktop-font-size-main-menu-link: 17px;
   $desktop-font-size-normal-page-text: 17px;
@@ -95,7 +95,7 @@ $form-input-border-color-hover: #62d1ba;
 
   // Table Version
   $table-line-height-page-title: 50px;
-  $table-line-height-catalog-menu-title: 30px;
+  $table-line-height-catalog-menu-link: 30px;
   $table-line-height-main-menu-link: 24px;
   $table-line-height-categories-title: 50px;
   $table-line-height-sub-title-goods-week: 17px;
@@ -108,7 +108,7 @@ $form-input-border-color-hover: #62d1ba;
 
   // Desktop Version
   $desktop-line-height-page-title: 57px;
-  $desktop-line-height-catalog-menu-title: 30px;
+  $desktop-line-height-catalog-menu-link: 30px;
   $desktop-line-height-categories-title: 57px;
   $desktop-line-height-sub-title-goods-week: 17px;
   $desktop-line-height-normal-goods-week-text: 30px;
@@ -212,10 +212,10 @@ $form-input-border-color-hover: #62d1ba;
 
 /*************** Sizes Media Query **************/
 
-  $mobile-width-only: #{'min-width: 767px'};
-  $table-width: #{'min-width: 768px'};
-  $desktop-width: #{'min-width: 1150px'};
+  $mobile-width-only: #{"min-width: 767px"};
+  $table-width: #{"min-width: 768px"};
+  $desktop-width: #{"min-width: 1150px"};
 
 /***********************************************/
 
-  $retina: #{'(min-resolution: 144dpi), (min-resolution: 1.5dppx)'};
+  $retina: #{"(min-resolution: 144dpi), (min-resolution: 1.5dppx)"};
