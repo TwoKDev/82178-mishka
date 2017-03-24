@@ -122,11 +122,11 @@
       transform: rotate(45deg);
 
       &:hover {
-        border-color: #666666;
+        border-color: $hover-arrows-btn-color;
       }
 
       &:active {
-        border-color: #b2b2b2;
+        border-color: $active-arrows-btn-color;
       }
     }
 
@@ -141,11 +141,11 @@
       background-color: black;
 
       &:hover {
-        background-color: #666666;
+        background-color: $hover-arrows-btn-color;
       }
 
       &:active {
-        background-color: #b2b2b2;
+        background-color: $active-arrows-btn-color;
       }
     }
   }

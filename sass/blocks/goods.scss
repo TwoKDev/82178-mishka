@@ -87,6 +87,14 @@
 
   outline: none;
   cursor: pointer;
+
+  &:hover path {
+    fill: $hover-icon-search-and-cart-color;
+  }
+
+  &:active path {
+    fill: $active-icon-search-and-cart-color;
+  }
 }
 
 .goods__price {

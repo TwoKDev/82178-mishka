@@ -56,13 +56,15 @@
 }
 
 .goods-week__images {
+  width: 260px;
+  height: 315px;
   padding-top: 28px;
   padding-bottom: 28px;
 }
 
 .goods-week__images img {
-  width: 260px;
-  height: 315px;
+  width: 100%;
+  height: auto;
 }
 
 .goods-week__footer {

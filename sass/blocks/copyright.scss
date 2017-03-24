@@ -13,6 +13,18 @@
   text-decoration: none;
   color: $all-color-page-bold-text;
   outline: none;
+
+  &:active {
+    color: $active-copyright-font-color; 
+  }
+
+  &:hover path {
+    fill: $hover-copyright-logo-color;
+  }
+
+  &:active path {
+  fill: $active-copyright-logo-color;
+  }
 }
 
 .copyright__title-name {
@@ -22,8 +34,10 @@
 }
 
 .copyright__logo {
+  width: 27px;
   padding-left: 25px;
 }
+
 
 @media ($table-width) {
   .copyright {

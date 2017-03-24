@@ -134,6 +134,14 @@
     color: $all-color-page-bold-text;
 
     outline: none;
+
+    &:hover {
+      color: $hover-link-font-color;
+    }
+
+    &:active {
+     color: $active-link-font-color;
+    }
   }
 
   .page-main__intro {

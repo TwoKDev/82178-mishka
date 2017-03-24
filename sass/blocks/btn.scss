@@ -43,15 +43,15 @@
   }
 
   &--ghost:hover {
-    color: $all-hover-button-text-color;
+    color: $hover-ghost-btn-font-color;
 
-    background-color: $all-hover-button-bg-color;
+    background-color: $hover-ghost-btn-bg-color;
   }
 
   &--ghost:active {
-    color: $all-active-button-text-color;
+    color: $active-ghost-btn-font-color;
 
-    background-color: $all-active-button-bg-color;
+    background-color: $active-ghost-btn-bg-color;
   }
 }
 

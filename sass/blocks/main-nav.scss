@@ -73,11 +73,19 @@
   color: $all-color-page-bold-text;
 
   &:hover {
-    color: #8d8d8d;
+    color: $hover-link-font-color;
   }
 
   &:active {
-    color: #cacaca;
+    color: $active-link-font-color;
+  }
+
+  &:hover path {
+    fill: $hover-icon-search-and-cart-color;
+  }
+
+  &:active path {
+    fill: $active-icon-search-and-cart-color;
   }
 }
 
