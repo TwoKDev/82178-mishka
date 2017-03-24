@@ -24,11 +24,46 @@
 
   &--interior {
     background-color: $all-color-bg-catalog-menu-item-1;
+
+    &:hover {
+      background-color: $hover-left-green-btn-bg-color;
+    }
+
+    &:active {
+      color: $active-left-green-btn-font-color;
+      background-color: $active-left-green-btn-bg-color;
+    }
   }
 
   &--toy {
     background-color: $all-color-bg-catalog-menu-item-2;
+
+
+    &:hover {
+      background-color: $hover-right-green-btn-bg-color;
+    }
+
+    &:active {
+      color: $active-right-green-btn-font-color;
+      background-color: $active-right-green-btn-bg-color;
+    }
   }
+}
+
+.catalogs-link__link--interior:hover svg {
+  fill: $hover-left-green-btn-icon-color;
+}
+
+.catalogs-link__link--interior:active svg {
+  fill: $active-left-green-btn-icon-color;
+}
+
+.catalogs-link__link--toy:hover svg {
+  fill: $hover-right-green-btn-icon-color;
+}
+
+.catalogs-link__link--toy:active svg {
+  fill: $active-right-green-btn-icon-color;
 }
 
 .catalogs-link__item {

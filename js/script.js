@@ -61,13 +61,13 @@ function init(){
   });
 
   myPlacemark = new ymaps.Placemark([59.93632956, 30.32173485], {
-    balloonContentHeader: '<img src="../img/logo-footer.svg">',
+    balloonContentHeader: '<img src="img/logo-footer.svg">',
     balloonContentBody: 'Милые штучки ручной работы для дома',
     hintContent: 'Mishka - Милые штучки ручной работы для дома'
   },
   {
       iconLayout: 'default#image',
-      iconImageHref: '../img/icon-map-pin.svg',
+      iconImageHref: 'img/icon-map-pin.svg',
       iconImageSize: [67, 100],
       iconImageOffset: [-40, -95]
   });
