@@ -85,16 +85,18 @@
   width: 19px;
   height: 21px;
 
+  fill: #d3d2d2;
+
   outline: none;
   cursor: pointer;
+}
 
-  &:hover path {
-    fill: $hover-icon-search-and-cart-color;
-  }
+.goods__btn-buy:hover svg {
+  fill: $hover-icon-search-and-cart-color;
+}
 
-  &:active path {
-    fill: $active-icon-search-and-cart-color;
-  }
+.goods__btn-buy:active svg {
+  fill: $active-icon-search-and-cart-color;
 }
 
 .goods__price {

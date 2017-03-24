@@ -38,24 +38,18 @@
     width: 24px;
     height: 20px;
   }
-
-  &:hover path {
-    fill: $hover-social-icon-color;
-  }
-
-  &:active path {
-    fill: $active-social-icon-color;
-  }
 }
 
-.page-footer__logo {
-  &:hover path {
-    fill: $hover-footer-logo-color;
-  }
+.social__link-icon {
+  fill: #221f1f;
+}
 
-  &:active path {
-    fill: $active-footer-logo-color;
-  }
+.social__link:hover > svg {
+  fill: $hover-social-icon-color;
+}
+
+.social__link:active > svg {
+  fill: $active-social-icon-color;
 }
 
 @media ($table-width) {

@@ -62,6 +62,8 @@
 .main-nav__item-icon {
   padding-right: 25px;
   padding-top: 2px;
+
+  fill: #d3d2d2;
 }
 
 .main-nav__item-link {
@@ -79,14 +81,14 @@
   &:active {
     color: $active-link-font-color;
   }
+}
 
-  &:hover path {
-    fill: $hover-icon-search-and-cart-color;
-  }
+.main-nav__item-link:hover svg {
+  fill: $hover-icon-search-and-cart-color;
+}
 
-  &:active path {
-    fill: $active-icon-search-and-cart-color;
-  }
+.main-nav__item-link:active svg {
+  fill: $active-icon-search-and-cart-color;
 }
 
 .main-nav__toggle {

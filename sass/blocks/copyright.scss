@@ -15,15 +15,7 @@
   outline: none;
 
   &:active {
-    color: $active-copyright-font-color; 
-  }
-
-  &:hover path {
-    fill: $hover-copyright-logo-color;
-  }
-
-  &:active path {
-  fill: $active-copyright-logo-color;
+    color: $active-copyright-font-color;
   }
 }
 
@@ -33,9 +25,19 @@
   line-height: $all-line-height-normal-copyright-text;
 }
 
-.copyright__logo {
+.copyright__logo-htmlacademy {
   width: 27px;
   padding-left: 25px;
+
+  fill: #63d1bb;
+}
+
+.copyright__link:hover > svg {
+  fill: $hover-copyright-logo-color;
+}
+
+.copyright__link:active > svg {
+  fill: $active-copyright-logo-color;
 }
 
 

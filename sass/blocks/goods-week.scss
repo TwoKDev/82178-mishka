@@ -84,8 +84,10 @@
 @media ($table-width) {
   .goods-week {
     position: relative;
+
     display: flex;
     flex-direction: column;
+    min-height: 460px;
 
     line-height: $table-line-height-normal-goods-week-text;
   }
@@ -144,6 +146,7 @@
 @media ($desktop-width) {
   .goods-week {
     width: 875px;
+    min-height: 600px;
     margin: 0;
     padding-top: 120px;
     padding-left: 225px;

@@ -13,7 +13,9 @@
 
 @media ($table-width) {
   .page-footer {
-    height: 143px;
+    height: auto;
+    padding-top: 38px;
+    padding-bottom: 17px;
   }
 
   .page-footer__inner {
@@ -21,16 +23,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    height: 143px;
+    height: auto;
   }
 
   .page-footer__logo {
     display: block;
-    width: 102px;
-    height: 24px;
     padding-right: 98px;
+    padding-top: 10px;
+  }
 
-    background-color: black;
+  .page-footer__logo-link:hover > svg {
+    fill: $hover-footer-logo-color;
+  }
+
+  .page-footer__logo-link:active > svg {
+    fill: $active-footer-logo-color;
   }
 }
