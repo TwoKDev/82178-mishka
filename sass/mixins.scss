@@ -1,13 +1,13 @@
-@mixin inner()  {
+@mixin inner() {
   width: 260px;
   margin: 0 auto;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
 
   @media ($table-width) {
     width: 668px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   @media ($desktop-width) {
@@ -18,8 +18,9 @@
 @mixin clearfix() {
   &::after {
     content: "";
+
     display: table;
-    width: 100%;
     clear: both;
+    width: 100%;
   }
 }

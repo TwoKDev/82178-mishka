@@ -1,5 +1,6 @@
 .page-footer {
   height: 160px;
+
   background-color: $all-color-bg-footer-block;
 }
 
@@ -28,8 +29,8 @@
 
   .page-footer__logo {
     display: block;
-    padding-right: 98px;
     padding-top: 10px;
+    padding-right: 98px;
   }
 
   .page-footer__logo-link:hover > svg {

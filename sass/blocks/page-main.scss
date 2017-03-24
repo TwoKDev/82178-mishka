@@ -1,13 +1,15 @@
 .page-main__header {
   position: relative;
+
+  margin-bottom: 23px;
   padding-top: 70px;
   padding-bottom: 75px;
-  margin-bottom: 23px;
 
   background-color: $all-color-bg-header-block-title;
 
   &--index-page {
     padding-bottom: 0;
+
     background-color: $all-color-bg-header-block-index-page-title;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -21,16 +23,17 @@
 
 .page-main__title {
   margin: 0;
-  font-size: $mobile-font-size-page-title;
+
   font-weight: bold;
+  font-size: $mobile-font-size-page-title;
   line-height: $mobile-line-height-page-title;
   text-align: center;
   color: $all-color-page-bold-text;
 
   &--index-page {
     width: 260px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding-bottom: 120px;
   }
 }
@@ -70,8 +73,8 @@
     &--index-page {
       display: block;
       width: 550px;
-      margin-left: auto;
       margin-right: auto;
+      margin-left: auto;
       padding-bottom: 380px;
     }
   }
@@ -80,6 +83,7 @@
     position: absolute;
     top: 15px;
     right: 50px;
+
     display: block;
 
     font-size: $all-font-size-mini-nav-menu-link;
@@ -105,8 +109,8 @@
     line-height: $desktop-line-height-page-title;
 
     &--index-page {
-      padding-bottom: 365px;
       width: 650px;
+      padding-bottom: 365px;
     }
   }
 
@@ -114,11 +118,10 @@
     display: flex;
     padding-bottom: 52px;
 
+    list-style: none;
+    font-weight: bold;
     font-size: $all-font-size-mini-nav-menu-link;
     line-height: $all-line-height-main-nav-menu-link;
-    font-weight: bold;
-
-    list-style: none;
 
     @include inner();
   }
@@ -130,8 +133,8 @@
   }
 
   .page-main__menu-link {
-    text-decoration: none;
     color: $all-color-page-bold-text;
+    text-decoration: none;
 
     outline: none;
 

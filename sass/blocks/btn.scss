@@ -5,21 +5,20 @@
   padding-top: 14px;
   padding-bottom: 14px;
 
-  font-size: $all-font-size-button;
   font-weight: bold;
+  font-size: $all-font-size-button;
   line-height: $all-line-height-button;
-  text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
   color: $all-color-button-text;
+  text-transform: uppercase;
+  text-decoration: none;
 
+  background: none;
   border-width: 2px;
   border-style: solid;
   border-color: $all-color-button-border;
-  background: none;
-
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 
   &--modal-window {
     width: 260px;
@@ -28,14 +27,14 @@
 
     color: $all-color-modal-window-button-text;
 
-    border: none;
     background-color: $all-color-bg-modal-window-button;
+    border: none;
   }
 
   &--production-process {
     width: auto;
-    margin-left: 33px;
     margin-right: 33px;
+    margin-left: 33px;
   }
 
   &--form-submit {
@@ -62,9 +61,9 @@
     }
 
     &--write-reviews {
-      margin: 0;
       order: 2;
       width: 171px;
+      margin: 0;
     }
 
     &--write-in-our {
@@ -80,8 +79,8 @@
 
     &--production-process {
       order: 4;
-      margin-left: 41px;
       margin-right: 41px;
+      margin-left: 41px;
     }
 
     &--modal-window {

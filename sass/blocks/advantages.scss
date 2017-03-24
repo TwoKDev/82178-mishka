@@ -1,7 +1,8 @@
 .advantages {
   padding-top: 30px;
-  font-size: $mobile-font-size-advantages-text;
+
   font-weight: bold;
+  font-size: $mobile-font-size-advantages-text;
   line-height: $mobile-line-height-advantages-text;
   color: $all-color-page-bold-text;
 
@@ -11,6 +12,7 @@
 .advantages__title {
   margin: 0;
   padding-bottom: 30px;
+
   font-size: $mobile-font-size-categories-title;
   line-height: $mobile-line-height-categories-title;
 }
@@ -21,6 +23,7 @@
   align-items: stretch;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -29,15 +32,18 @@
   flex-direction: column;
   min-height: 100px;
   padding-bottom: 30px;
+
   text-decoration: none;
 
   &--icon-1::before {
     content: "";
+
     display: block;
     width: 33px;
     height: 38px;
-    padding-left: 7px;
     padding-bottom: 18px;
+    padding-left: 7px;
+
     background-image: url("../img/icon-feature-1.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -45,10 +51,12 @@
 
   &--icon-2::before {
     content: "";
+
     display: block;
     width: 47px;
     height: 27px;
     padding-bottom: 27px;
+
     background-image: url("../img/icon-feature-3.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -56,11 +64,13 @@
 
   &--icon-3::before {
     content: "";
+
     display: block;
     width: 34px;
     height: 28px;
-    padding-left: 7px;
     padding-bottom: 23px;
+    padding-left: 7px;
+
     background-image: url("../img/icon-feature-5.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -68,11 +78,13 @@
 
   &--icon-4::before {
     content: "";
+
     display: block;
     width: 35px;
     height: 34px;
-    padding-left: 3px;
     padding-bottom: 18px;
+    padding-left: 3px;
+
     background-image: url("../img/icon-feature-2.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -80,10 +92,12 @@
 
   &--icon-5::before {
     content: "";
+
     display: block;
     width: 55px;
     height: 23px;
     padding-bottom: 27px;
+
     background-image: url("../img/icon-feature-4.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -91,11 +105,13 @@
 
   &--icon-6::before {
     content: "";
+
     display: block;
     width: 33px;
     height: 32px;
-    padding-left: 3px;
     padding-bottom: 21px;
+    padding-left: 3px;
+
     background-image: url("../img/icon-feature-6.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -105,8 +121,9 @@
 @media ($table-width) {
   .advantages {
     padding-bottom: 35px;
-    font-size: $table-font-size-advantages-text;
+
     font-weight: bold;
+    font-size: $table-font-size-advantages-text;
     line-height: $table-line-height-advantages-text;
     color: $all-color-page-bold-text;
   }
@@ -156,8 +173,9 @@
     width: 700px;
     margin: 0 auto;
     padding-bottom: 35px;
-    font-size: $desktop-font-size-advantages-text;
+
     font-weight: bold;
+    font-size: $desktop-font-size-advantages-text;
     line-height: $desktop-line-height-advantages-text;
     color: $all-color-page-bold-text;
   }

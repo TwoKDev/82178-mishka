@@ -1,6 +1,6 @@
 .reviews {
-  padding-bottom: 44px;
   padding-top: 30px;
+  padding-bottom: 44px;
 }
 
 .reviews__inner {
@@ -10,8 +10,9 @@
 .reviews__title {
   margin: 0;
   padding-bottom: 30px;
-  font-size: $mobile-font-size-categories-title;
+
   font-weight: bold;
+  font-size: $mobile-font-size-categories-title;
   line-height: $mobile-line-height-categories-title;
   color: $all-color-page-bold-text;
 }
@@ -28,27 +29,29 @@
 
 .reviews__author-name {
   font-weight: bold;
-  font-style: normal;
   color: $all-color-page-bold-text;
+  font-style: normal;
 }
 
 .reviews__btn-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   padding-bottom: 38px;
 }
 
 .reviews__btn {
   min-width: 130px;
   min-height: 50px;
+
   font-size: 0;
+
+  background: none;
   border-width: 1px;
   border-style: solid;
   border-color: $all-color-page-borders;
-  background: none;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 
   &:hover {
     &:before {
@@ -82,9 +85,11 @@
       position: absolute;
       top: 33%;
       left: 33%;
+
       display: block;
       width: 12px;
       height: 12px;
+
       border-width: 3px;
       border-style: solid;
       border-color: black;
@@ -98,9 +103,11 @@
       position: absolute;
       top: 45%;
       left: 33%;
+
       display: block;
       width: 51px;
       height: 3px;
+
       background-color: black;
     }
   }
@@ -111,14 +118,16 @@
       position: absolute;
       top: 33%;
       right: 33%;
+
       display: block;
       width: 12px;
       height: 12px;
+
       border-width: 3px;
       border-style: solid;
       border-color: black;
-      border-left: none;
       border-bottom: none;
+      border-left: none;
       transform: rotate(45deg);
 
       &:hover {
@@ -135,9 +144,11 @@
       position: absolute;
       top: 45%;
       right: 33%;
+
       display: block;
       width: 51px;
       height: 3px;
+
       background-color: black;
 
       &:hover {
@@ -154,11 +165,11 @@
 @media ($table-width) {
   .reviews {
     position: relative;
+
     min-height: 457px;
 
     &::before {
       content: "";
-
       position: absolute;
       z-index: -1;
 
@@ -206,9 +217,9 @@
 
   .reviews__btn {
     min-width: 87px;
+    padding: 0;
 
     border: none;
-    padding: 0;
 
     &--prev {
       &::before {

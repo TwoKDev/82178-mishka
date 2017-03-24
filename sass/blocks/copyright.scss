@@ -1,17 +1,20 @@
 .copyright {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  padding-bottom: 20px;
+  justify-content: space-around;
   padding-top: 20px;
+  padding-bottom: 20px;
+
   color: $all-color-page-bold-text;
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
-  text-decoration: none;
+
   color: $all-color-page-bold-text;
+  text-decoration: none;
+
   outline: none;
 
   &:active {
@@ -20,8 +23,8 @@
 }
 
 .copyright__title-name {
-  font-size: $all-font-size-normal-copyright-text;
   font-weight: bold;
+  font-size: $all-font-size-normal-copyright-text;
   line-height: $all-line-height-normal-copyright-text;
 }
 

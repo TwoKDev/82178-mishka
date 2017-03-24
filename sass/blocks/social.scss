@@ -1,6 +1,6 @@
 .social {
-  min-height: 80px;
   width: 260px;
+  min-height: 80px;
 }
 
 .social__list {
@@ -11,13 +11,14 @@
   min-height: 80px;
   margin: 0;
   padding: 0;
-  padding-left: 39px;
   padding-right: 39px;
+  padding-left: 39px;
+
+  list-style: none;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: $all-color-page-borders;
-  list-style: none;
 }
 
 .social__link {
