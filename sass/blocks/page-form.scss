@@ -36,6 +36,14 @@
 
 .page-form__wrapper {
   @include inner();
+
+  &--telephone {
+    position: relative;
+  }
+
+  &--email {
+    position: relative;
+  }
 }
 
 .page-form__legend-title {
@@ -195,6 +203,22 @@
   }
 }
 
+.page-form__input-field:hover ~ .page-form__input-field-icon {
+  fill: $hover-input-placeholder-icon-color
+}
+
+.page-form__input-field:active ~ .page-form__input-field-icon {
+  fill: $active-input-placeholder-icon-color
+}
+
+.page-form__input-field-icon {
+  position: absolute;
+  top: 37px;
+  right: 35px;
+
+  fill: #cccccc;
+}
+
 .page-form__input-label {
     &--full-name {
       padding-top: 0;
@@ -327,6 +351,11 @@
 
       background-color: #f1f1f1;
     }
+  }
+
+  .page-form__input-field-icon {
+    top: 18px;
+    right: 55px;
   }
 
   .page-form__input-list {
@@ -530,6 +559,10 @@
     &--email {
       width: 685px;
     }
+  }
+
+  .page-form__input-field-icon {
+    right: 230px;
   }
 
   .page-form__textarea {
