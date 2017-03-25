@@ -1,11 +1,36 @@
 .page-header {
-  position: relative;
-  width: 320px;
-  min-height: 78px;
+  z-index: 2;
+
   border-width: 1px;
   border-style: solid;
-  border-color: $line-border-color;
-  border-left: none;
+  border-color: $all-color-page-borders;
   border-right: none;
-  background-color: white;
+  border-left: none;
+}
+
+.page-header__inner {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 78px;
+
+  @include inner();
+
+  &--nojs {
+    flex-direction: column;
+  }
+}
+
+@media ($table-width) {
+  .page-header__inner {
+    position: relative;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 88px;
+  }
 }

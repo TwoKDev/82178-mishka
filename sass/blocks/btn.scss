@@ -1,29 +1,106 @@
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 260px;
-  min-height: 48px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $btn-border-color;
-  background: none;
-  font-size: 18px;
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
   font-weight: bold;
-  line-height: 20px;
+  font-size: $all-font-size-button;
+  line-height: $all-line-height-button;
+  text-align: center;
+  color: $all-color-button-text;
   text-transform: uppercase;
   text-decoration: none;
-  color: $page-font-color;
-  cursor: pointer;
+
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $all-color-button-border;
   outline: none;
+  cursor: pointer;
+
+  &--modal-window {
+    width: 260px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: $all-color-modal-window-button-text;
+
+    background-color: $all-color-bg-modal-window-button;
+    border: none;
+  }
+
+  &--production-process {
+    width: auto;
+    margin-right: 33px;
+    margin-left: 33px;
+  }
+
+  &--form-submit {
+    width: 258px;
+  }
 
   &--ghost:hover {
-    background-color: #444444;
-    color: white;
+    color: $hover-ghost-btn-font-color;
+
+    background-color: $hover-ghost-btn-bg-color;
+    transition-duration: 0.35s;
   }
 
   &--ghost:active {
-    background-color: #444444;
-    color: #8d8d8d;
+    color: $active-ghost-btn-font-color;
+
+    background-color: $active-ghost-btn-bg-color;
+  }
+}
+
+@media ($table-width) {
+  .btn {
+    &--buy {
+      width: 288px;
+    }
+
+    &--write-reviews {
+      order: 2;
+      width: 171px;
+      margin: 0;
+    }
+
+    &--write-in-our {
+      width: 226px;
+    }
+
+    &--form-submit {
+      width: 230px;
+      margin: 0;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    &--production-process {
+      order: 4;
+      margin-right: 41px;
+      margin-left: 41px;
+    }
+
+    &--modal-window {
+      width: 350px;
+    }
+  }
+}
+
+@media ($desktop-width) {
+  .btn {
+    &--write-in-our {
+      margin: 0;
+    }
+
+    &--production-process {
+      float: right;
+      width: 227px;
+      margin-right: 56px;
+      margin-bottom: 30px;
+    }
   }
 }

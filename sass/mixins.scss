@@ -1,0 +1,26 @@
+@mixin inner() {
+  width: 260px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media ($table-width) {
+    width: 668px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media ($desktop-width) {
+    width: 1050px;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+    width: 100%;
+  }
+}

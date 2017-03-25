@@ -1,27 +1,55 @@
 .copyright {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-height: 79px;
-}
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-.copyright__title {
-  margin-left: 20px;
-  font-size: $font-size-catalogs-link;
-  font-weight: bold;
-  line-height: 18px;
+  color: $all-color-page-bold-text;
 }
 
 .copyright__link {
+  display: flex;
+  align-items: center;
+
+  color: $all-color-page-bold-text;
+  text-decoration: none;
+
+  outline: none;
+
+  &:active {
+    color: $active-copyright-font-color;
+
+    transition-duration: 0.35s;
+  }
+}
+
+.copyright__title-name {
+  font-weight: bold;
+  font-size: $all-font-size-normal-copyright-text;
+  line-height: $all-line-height-normal-copyright-text;
+}
+
+.copyright__logo-htmlacademy {
   width: 27px;
-  height: 34px;
-  margin-top: 5px;
-  margin-right: 20px;
-  font-size: 0px;
-  background-image: url('../img/logo-htmlacademy.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-left: 25px;
+
+  fill: #63d1bb;
+}
+
+.copyright__link:hover > svg {
+  transition-duration: 0.35s;
+
+  fill: $hover-copyright-logo-color;
+}
+
+.copyright__link:active > svg {
+  fill: $active-copyright-logo-color;
+}
+
+
+@media ($table-width) {
+  .copyright {
+    width: 200px;
+  }
 }
