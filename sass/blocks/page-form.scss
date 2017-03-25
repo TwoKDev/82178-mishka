@@ -151,7 +151,6 @@
 
 .page-form__radio {
   display: none;
-
   &:checked ~ .page-form__input-indicator {
     &:before {
       content: "";
@@ -165,6 +164,10 @@
       background-color: $all-color-form-radio-indicator;
       border-radius: 100%;
     }
+  }
+
+  &:disabled ~ .page-form__input-indicator {
+    border-color: $active-input-radio-checkbox-color;
   }
 }
 
@@ -189,6 +192,14 @@
       transform: rotate(45deg);
     }
   }
+
+  &:disabled ~ .page-form__input-indicator {
+    border-color: $active-input-radio-checkbox-color;
+  }
+}
+
+.page-form__radio:disabled > .page-form__input-indicator {
+  border-color: white;
 }
 
 .page-form__input-field {
@@ -602,5 +613,9 @@
   .page-form__intro {
     font-size: $table-font-size-form-footer-text-intro;
     line-height: $table-line-height-form-footer-text-intro;
+  }
+
+  .page-form__radio:disabled > .page-form__input-indicator {
+
   }
 }
