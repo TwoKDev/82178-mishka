@@ -89,9 +89,9 @@
 }
 
 .main-nav__item-link:hover svg {
-  fill: $hover-icon-search-and-cart-color;
-
   transition-duration: 0.35s;
+
+  fill: $hover-icon-search-and-cart-color;
 }
 
 .main-nav__item-link:active svg {
@@ -179,6 +179,7 @@
       position: absolute;
       bottom: -40px;
       left: 0;
+      z-index: 1;
 
       padding: 0;
       padding-left: 50px;
@@ -188,6 +189,7 @@
       position: absolute;
       bottom: -40px;
       left: 170px;
+      z-index: 1;
 
       padding: 0;
       padding-left: 50px;

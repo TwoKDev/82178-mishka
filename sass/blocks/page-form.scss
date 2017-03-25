@@ -219,9 +219,9 @@
 }
 
 .page-form__input-field:hover ~ .page-form__input-field-icon {
-  fill: $hover-input-placeholder-icon-color;
-
   transition-duration: 0.35s;
+
+  fill: $hover-input-placeholder-icon-color;
 }
 
 .page-form__input-field:active ~ .page-form__input-field-icon {
