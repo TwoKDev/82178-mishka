@@ -35,7 +35,7 @@
 
   text-decoration: none;
 
-  &--icon-1::before {
+  &--icon-flower::before {
     content: "";
 
     display: block;
@@ -49,7 +49,7 @@
     background-position: center;
   }
 
-  &--icon-2::before {
+  &--icon-clew::before {
     content: "";
 
     display: block;
@@ -62,7 +62,7 @@
     background-position: center;
   }
 
-  &--icon-3::before {
+  &--icon-dollar::before {
     content: "";
 
     display: block;
@@ -76,7 +76,7 @@
     background-position: center;
   }
 
-  &--icon-4::before {
+  &--icon-rocket::before {
     content: "";
 
     display: block;
@@ -90,7 +90,7 @@
     background-position: center;
   }
 
-  &--icon-5::before {
+  &--icon-heart::before {
     content: "";
 
     display: block;
@@ -103,7 +103,7 @@
     background-position: center;
   }
 
-  &--icon-6::before {
+  &--icon-gift::before {
     content: "";
 
     display: block;
@@ -142,27 +142,27 @@
   .advantages__item {
     width: 300px;
 
-    &--icon-1 {
+    &--icon-flower {
       order: 1;
     }
 
-    &--icon-2 {
+    &--icon-clew {
       order: 3;
     }
 
-    &--icon-3 {
+    &--icon-dollar {
       order: 5;
     }
 
-    &--icon-4 {
+    &--icon-rocket {
       order: 2;
     }
 
-    &--icon-5 {
+    &--icon-heart {
       order: 4;
     }
 
-    &--icon-6 {
+    &--icon-gift {
       order: 6;
     }
   }
