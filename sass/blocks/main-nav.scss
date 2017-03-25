@@ -98,8 +98,8 @@
   fill: $active-icon-search-and-cart-color;
 }
 
-.main-nav__toggle {
-  position: relative;
+.page-header__toggle {
+  position: absolute;
 
   width: 20px;
   height: 14px;
@@ -256,7 +256,7 @@
     }
   }
 
-  .main-nav__toggle {
+  .page-header__toggle {
     display: none;
   }
 

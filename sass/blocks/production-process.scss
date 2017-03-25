@@ -53,7 +53,38 @@
 }
 
 .production-process__video {
+  position: relative;
+
   margin-bottom: 19px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 102px;
+    height: 78px;
+    margin-top: -39px;
+    margin-left: -51px;
+
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    transform: scale(1.2);
+
+    transition-duration: 0.35s;
+  }
+
+  &:active::after {
+    transform: scale(0.8);
+    opacity: 0.5;
+
+    transition-duration: 0.35s;
+  }
 }
 
 .production-process__item {

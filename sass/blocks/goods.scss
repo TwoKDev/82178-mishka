@@ -1,4 +1,4 @@
-.goods__wrapper {
+.goods-list {
   @include inner();
 }
 
@@ -95,6 +95,11 @@
   outline: none;
   cursor: pointer;
 
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
   fill: #d3d2d2;
 }
 
@@ -166,7 +171,7 @@
 }
 
 @media ($desktop-width) {
-  .goods__wrapper {
+  .goods-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

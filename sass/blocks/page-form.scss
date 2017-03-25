@@ -102,13 +102,13 @@
   }
 
   &:hover > .page-form__input-indicator {
-    border-color: $form-border-color-hover;
+    border-color: $hover-input-radio-checkbox-color;
 
     transition-duration: 0.35s;
   }
 
   &:active > .page-form__input-indicator {
-    border-color: $form-border-color-down;
+    border-color: $active-input-radio-checkbox-color;
 
     transition-duration: 0s;
   }
@@ -208,13 +208,13 @@
   outline: none;
 
   &:hover {
-    border-bottom-color: $form-input-underline-color-hover;
+    border-bottom-color: $hover-input-placeholder-border-color;
 
     transition-duration: 0.35s;
   }
 
   &:focus {
-    border-bottom-color: $form-input-underline-color-hover;
+    border-bottom-color: $active-input-placeholder-border-color;
   }
 }
 
@@ -261,13 +261,13 @@
   resize: vertical;
 
   &:hover {
-    border-color: $form-input-border-color-hover;
+    border-color: $hover-input-placeholder-border-color;
 
     transition-duration: 0.35s;
   }
 
   &:focus {
-    border-color: $form-input-border-color-hover;
+    border-color: $active-input-placeholder-border-color;
   }
 }
 

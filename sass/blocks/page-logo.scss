@@ -1,4 +1,4 @@
-.page-logo__images {
+.page-logo {
   width: 86px;
   height: 35px;
   margin-right: auto;
@@ -8,13 +8,13 @@
 }
 
 @media ($table-width) {
-  .page-logo__images {
+  .page-logo {
     padding-left: 0;
   }
 }
 
 @media ($desktop-width) {
-  .page-logo__images {
+  .page-logo {
     position: absolute;
     top: 5px;
     left: 533px;
