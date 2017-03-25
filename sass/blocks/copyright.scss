@@ -19,6 +19,8 @@
 
   &:active {
     color: $active-copyright-font-color;
+
+    transition-duration: 0.35s;
   }
 }
 
@@ -37,6 +39,8 @@
 
 .copyright__link:hover > svg {
   fill: $hover-copyright-logo-color;
+
+  transition-duration: 0.35s;
 }
 
 .copyright__link:active > svg {

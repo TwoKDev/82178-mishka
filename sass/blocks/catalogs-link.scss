@@ -1,4 +1,6 @@
 .catalogs-link {
+  @include inner();
+
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -9,8 +11,6 @@
   font-size: $mobile-font-size-catalog-menu-link;
   line-height: $mobile-line-height-catalog-menu-link;
   color: $all-color-text-catalog-menu;
-
-  @include inner();
 }
 
 .catalogs-link__link {
@@ -27,10 +27,12 @@
 
     &:hover {
       background-color: $hover-left-green-btn-bg-color;
+      transition-duration: 0.3s;
     }
 
     &:active {
       color: $active-left-green-btn-font-color;
+
       background-color: $active-left-green-btn-bg-color;
     }
   }
@@ -41,10 +43,12 @@
 
     &:hover {
       background-color: $hover-right-green-btn-bg-color;
+      transition-duration: 0.3s;
     }
 
     &:active {
       color: $active-right-green-btn-font-color;
+
       background-color: $active-right-green-btn-bg-color;
     }
   }
@@ -52,6 +56,7 @@
 
 .catalogs-link__link--interior:hover svg {
   fill: $hover-left-green-btn-icon-color;
+  transition-duration: 0.3s;
 }
 
 .catalogs-link__link--interior:active svg {
@@ -60,6 +65,7 @@
 
 .catalogs-link__link--toy:hover svg {
   fill: $hover-right-green-btn-icon-color;
+  transition-duration: 0.3s;
 }
 
 .catalogs-link__link--toy:active svg {
@@ -82,11 +88,36 @@
 .catalogs-link__item-icon {
   &--interior {
     margin-right: 6px;
+
+    fill: #3bb09d;
+  }
+
+  &--toy {
+    fill: #35a999;
   }
 }
 
-
 @media ($table-width) {
+  .catalogs-link__link {
+    margin-top: 5px;
+
+    &--interior {
+      &:hover {
+        margin-top: -5px;
+        padding-bottom: 5px;
+        transition-duration: 0.3s;
+      }
+    }
+
+    &--toy {
+      &:hover {
+        margin-top: -5px;
+        padding-bottom: 5px;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+
   .catalogs-link {
     flex-direction: row;
 

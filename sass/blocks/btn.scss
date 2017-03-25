@@ -45,6 +45,7 @@
     color: $hover-ghost-btn-font-color;
 
     background-color: $hover-ghost-btn-bg-color;
+    transition-duration: 0.35s;
   }
 
   &--ghost:active {

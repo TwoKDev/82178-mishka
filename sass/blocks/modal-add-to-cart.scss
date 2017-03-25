@@ -1,6 +1,15 @@
+@keyframes pop-down {
+  0% {
+    transform: translateY(-700px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal-add-to-cart {
   position: fixed;
-  top: 35%;
+  top: 30%;
   left: 50%;
   z-index: 10;
 
@@ -26,6 +35,8 @@
 
   &--opened {
     display: block;
+
+    animation: pop-down 0.6s;
   }
 }
 
@@ -84,6 +95,8 @@
 
   &:hover {
     border-color: $hover-modal-window-size-border-color;
+
+    transition-duration: 0.35s;
   }
 }
 
@@ -92,6 +105,8 @@
 
   &:checked ~ .modal-add-to-cart__label-text {
     border-color: $active-modal-window-size-border-color;
+
+    transition-duration: 0.35s;
   }
 }
 

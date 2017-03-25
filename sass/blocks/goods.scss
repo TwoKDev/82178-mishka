@@ -11,6 +11,8 @@
 
   &:hover {
     box-shadow: 0 7px 15px 0 rgba(236,236,236,1);
+
+    transition-duration: 0.35s;
   }
 
   &:active {
@@ -69,6 +71,8 @@
 
   &:hover {
     color: #8d8d8d;
+
+    transition-duration: 0.35s;
   }
 
   &:active {
@@ -96,6 +100,8 @@
 
 .goods__btn-buy:hover svg {
   fill: $hover-icon-search-and-cart-color;
+
+  transition-duration: 0.35s;
 }
 
 .goods__btn-buy:active svg {

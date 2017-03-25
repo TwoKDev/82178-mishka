@@ -54,22 +54,24 @@
   cursor: pointer;
 
   &:hover {
-    &:before {
-      border-color: #666666;
+    &::before {
+      border-color: $hover-arrows-btn-color;
+      transition-duration: 0.35s;
     }
 
-    &:after {
-      background-color: #666666;
+    &::after {
+      background-color: $hover-arrows-btn-color;
+      transition-duration: 0.35s;
     }
   }
 
   &:active {
-    &:before {
-      border-color: #b2b2b2;
+    &::before {
+      border-color: $active-arrows-btn-color;
     }
 
-    &:after {
-      background-color: #b2b2b2;
+    &::after {
+      background-color: $active-arrows-btn-color;
     }
   }
 }
@@ -129,14 +131,6 @@
       border-bottom: none;
       border-left: none;
       transform: rotate(45deg);
-
-      &:hover {
-        border-color: $hover-arrows-btn-color;
-      }
-
-      &:active {
-        border-color: $active-arrows-btn-color;
-      }
     }
 
     &:after {
@@ -150,14 +144,6 @@
       height: 3px;
 
       background-color: black;
-
-      &:hover {
-        background-color: $hover-arrows-btn-color;
-      }
-
-      &:active {
-        background-color: $active-arrows-btn-color;
-      }
     }
   }
 }

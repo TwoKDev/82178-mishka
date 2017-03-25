@@ -103,10 +103,14 @@
 
   &:hover > .page-form__input-indicator {
     border-color: $form-border-color-hover;
+
+    transition-duration: 0.35s;
   }
 
   &:active > .page-form__input-indicator {
     border-color: $form-border-color-down;
+
+    transition-duration: 0s;
   }
 }
 
@@ -205,6 +209,8 @@
 
   &:hover {
     border-bottom-color: $form-input-underline-color-hover;
+
+    transition-duration: 0.35s;
   }
 
   &:focus {
@@ -214,6 +220,8 @@
 
 .page-form__input-field:hover ~ .page-form__input-field-icon {
   fill: $hover-input-placeholder-icon-color;
+
+  transition-duration: 0.35s;
 }
 
 .page-form__input-field:active ~ .page-form__input-field-icon {
@@ -254,6 +262,8 @@
 
   &:hover {
     border-color: $form-input-border-color-hover;
+
+    transition-duration: 0.35s;
   }
 
   &:focus {
