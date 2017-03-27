@@ -91,14 +91,12 @@
 .goods__btn-buy {
   width: 19px;
   height: 21px;
-
-  outline: none;
-  cursor: pointer;
-
-
   margin: 0;
   padding: 0;
+
   border: none;
+  outline: none;
+  cursor: pointer;
 
   fill: #d3d2d2;
 }
@@ -123,7 +121,7 @@
 }
 
 
-@media ($table-width) {
+@media ($tablet-width) {
   .goods {
     display: flex;
     flex-direction: row;
@@ -132,7 +130,7 @@
   }
 
   .goods__title {
-    font-size: $table-font-size-goods-title;
+    font-size: $tablet-font-size-goods-title;
   }
 
   .goods__images {
@@ -146,7 +144,7 @@
   }
 
   .goods__stats {
-    font-size: $table-font-size-goods-stats;
+    font-size: $tablet-font-size-goods-stats;
   }
 
   .goods__footer {
@@ -166,7 +164,7 @@
   }
 
   .goods__price {
-    font-size: $table-font-size-goods-price;
+    font-size: $tablet-font-size-goods-price;
   }
 }
 

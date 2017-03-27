@@ -10,7 +10,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 23px;
   padding-right: 39px;
   padding-bottom: 25px;
   padding-left: 39px;
@@ -56,7 +56,7 @@
   fill: $active-social-icon-color;
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .social__list {
     min-height: auto;
     padding-top: 25px;

@@ -1,14 +1,32 @@
 .goods-week {
-  padding-top: 30px;
-  padding-bottom: 34px;
+  position: relative;
+
+  padding-top: 27px;
+  padding-bottom: 40px;
 
   line-height: $mobile-line-height-normal-goods-week-text;
 
   @include inner();
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    height: 7px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-size: 320px 7px;
+  }
 }
 
 .goods-week__header {
-  padding-bottom: 30px;
+  padding-bottom: 19px;
 
   font-weight: bold;
 }
@@ -31,7 +49,7 @@
 
 .goods-week__description {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .goods-week__stats-table {
@@ -51,11 +69,13 @@
 }
 
 .goods-week__stats-name {
-  padding-right: 15px;
+  padding-top: 8px;
+  padding-right: 11px;
   padding-bottom: 10px;
 }
 
 .goods-week__stats-value {
+  padding-top: 8px;
   padding-bottom: 10px;
 }
 
@@ -63,7 +83,7 @@
   width: 260px;
   height: 315px;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 }
 
 .goods-week__images img {
@@ -78,7 +98,7 @@
 
 .goods-week__price {
   align-self: center;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 
   font-weight: bold;
   font-size: $mobile-font-size-price-goods-week;
@@ -86,15 +106,24 @@
 }
 
 
-@media ($table-width) {
+@media ($tablet-width) {
   .goods-week {
     position: relative;
 
     display: flex;
     flex-direction: column;
     min-height: 460px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    padding-left: 48px;
 
-    line-height: $table-line-height-normal-goods-week-text;
+    line-height: $tablet-line-height-normal-goods-week-text;
+
+    &:after {
+      height: 17px;
+
+      background-size: 772px 17px;
+    }
   }
 
   .goods-week__header {
@@ -102,6 +131,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 668px;
+    padding-bottom: 48px;
   }
 
   .goods-week__title {
@@ -109,29 +139,42 @@
 
     padding: 0;
 
-    font-size: $table-font-size-categories-title;
-    line-height: $table-line-height-categories-title;
+    font-size: $tablet-font-size-categories-title;
+    line-height: $tablet-line-height-categories-title;
   }
 
   .goods-week__title-intro {
     width: 100px;
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-right: 13px;
 
-    line-height: $table-line-height-sub-title-goods-week;
+    line-height: $tablet-line-height-sub-title-goods-week;
     text-align: center;
   }
 
   .goods-week__description {
     width: 290px;
+    padding-bottom: 38px;
   }
 
   .goods-week__stats-table {
     width: 290px;
   }
 
+  .goods-week__stats-name {
+    padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .goods-week__stats-value {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
   .goods-week__images {
     position: absolute;
-    top: 110px;
+    top: 150px;
     right: 50px;
 
     width: 334px;
@@ -141,10 +184,13 @@
 
   .goods-week__footer {
     width: 290px;
+    padding-top: 57px;
   }
 
   .goods-week__price {
-    padding-top: 55px;
+    padding-bottom: 34px;
+
+    font-size: 20px;
   }
 }
 
@@ -153,18 +199,25 @@
     width: 875px;
     min-height: 600px;
     margin: 0;
-    padding-top: 120px;
+    padding-top: 122px;
+    padding-bottom: 80px;
     padding-left: 225px;
 
     line-height: $desktop-line-height-normal-goods-week-text;
+
+    &:after {
+      height: 23px;
+
+      background-size: 1150px 23px;
+    }
   }
 
   .goods-week__header {
     flex-direction: row-reverse;
     justify-content: flex-start;
     margin-left: -175px;
-    padding-bottom: 60px;
-    padding-left: 35px;
+    padding-bottom: 50px;
+    padding-left: 21px;
   }
 
   .goods-week__title {
@@ -175,12 +228,15 @@
   }
 
   .goods-week__title-intro {
+    padding-top: 16px;
+    padding-right: 5px;
+
     line-height: $desktop-line-height-sub-title-goods-week;
   }
 
   .goods-week__description {
     width: 292px;
-    padding-bottom: 60px;
+    padding-bottom: 49px;
   }
 
   .goods-week__stats-table {
@@ -189,10 +245,13 @@
 
   .goods-week__stats-name {
     padding-top: 8px;
+    padding-right: 0;
+    padding-bottom: 11px;
   }
 
   .goods-week__stats-value {
     padding-top: 8px;
+    padding-bottom: 11px;
   }
 
   .goods-week__images {
@@ -205,10 +264,11 @@
 
   .goods-week__footer {
     width: 292px;
+    padding-top: 110px;
   }
 
   .goods-week__price {
-    padding-top: 105px;
     padding-bottom: 32px;
+    padding-left: 9px;
   }
 }

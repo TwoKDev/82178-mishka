@@ -6,6 +6,7 @@
 
 .page-form__header-text {
   margin: 0;
+  padding-top: 23px;
   padding-bottom: 23px;
 
   font-size: $mobile-font-size-form-header-text-intro;
@@ -168,6 +169,12 @@
 
   &:disabled ~ .page-form__input-indicator {
     border-color: $active-input-radio-checkbox-color;
+    opacity: 0.5;
+  }
+
+  &:disabled ~ .page-form__input-title {
+    border-color: $active-input-radio-checkbox-color;
+    opacity: 0.5;
   }
 }
 
@@ -302,12 +309,12 @@
   @include inner();
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .page-form__header-text {
-    padding-top: 40px;
+    padding-top: 63px;
 
-    font-size: $table-font-size-form-header-text-intro;
-    line-height: $table-line-height-form-header-text-intro;
+    font-size: $tablet-font-size-form-header-text-intro;
+    line-height: $tablet-line-height-form-header-text-intro;
   }
 
   .page-form {
@@ -473,7 +480,7 @@
   .page-form__input-title {
     padding-left: 28px;
 
-    font-size: $table-font-size-form-label-name;
+    font-size: $tablet-font-size-form-label-name;
 
     &--full-name {
       padding-right: 20px;
@@ -512,8 +519,8 @@
     padding: 0;
     padding-top: 10px;
 
-    font-size: $table-font-size-form-footer-text-intro;
-    line-height: $table-line-height-form-footer-text-intro;
+    font-size: $tablet-font-size-form-footer-text-intro;
+    line-height: $tablet-line-height-form-footer-text-intro;
     text-align: right;
   }
 }
@@ -521,7 +528,7 @@
 @media ($desktop-width) {
   .page-form__header-text {
     width: 700px;
-    padding-top: 97px;
+    padding-top: 120px;
 
     font-size: $desktop-font-size-form-header-text-intro;
     line-height: $desktop-line-height-form-header-text-intro;
@@ -611,11 +618,7 @@
   }
 
   .page-form__intro {
-    font-size: $table-font-size-form-footer-text-intro;
-    line-height: $table-line-height-form-footer-text-intro;
-  }
-
-  .page-form__radio:disabled > .page-form__input-indicator {
-
+    font-size: $tablet-font-size-form-footer-text-intro;
+    line-height: $tablet-line-height-form-footer-text-intro;
   }
 }

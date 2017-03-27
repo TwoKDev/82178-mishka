@@ -1,14 +1,25 @@
 .page-logo {
   width: 86px;
   height: 35px;
-  padding-left: 120px;
-  padding-right: 65px;
   padding-top: 20px;
+  padding-right: 67px;
   padding-bottom: 23px;
+  padding-left: 116px;
 }
 
-@media ($table-width) {
+.page-logo__link {
+  &:hover img {
+    opacity: 0.6;
+  }
+
+  &:active img {
+    opacity: 0.3;
+  }
+}
+
+@media ($tablet-width) {
   .page-logo {
+    width: 112px;
     padding-left: 0;
   }
 }
@@ -17,7 +28,10 @@
   .page-logo {
     position: absolute;
     top: 5px;
-    left: 533px;
+    left: 500px;
     z-index: 4;
+
+    width: 148px;
+    padding: 0;
   }
 }

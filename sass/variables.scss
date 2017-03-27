@@ -18,24 +18,24 @@
   $mobile-font-size-modal-window-title: 25px;
   $mobile-font-size-modal-window-text: 15px;
 
-  // -------- Table Version ------- //
-  $table-font-size-page-title: 43px;
-  $table-font-size-catalog-menu-link: 20px;
-  $table-font-size-main-menu-link-cart-and-search: 17px;
-  $table-font-size-main-menu-link-mini: 15px;
-  $table-font-size-normal-page-text: 17px;
-  $table-font-size-categories-title: 43px;
-  $table-font-size-price-goods-week: 20px;
-  $table-font-size-advantages-text: 20px;
-  $table-font-size-goods-title: 20px;
-  $table-font-size-goods-stats: 15px;
-  $table-font-size-goods-price: 17px;
-  $table-font-size-production-process-text: 15px;
-  $table-font-size-form-header-text-intro: 17px;
-  $table-font-size-form-footer-text-intro: 17px;
-  $table-font-size-form-label-name: 19px;
-  $table-font-size-modal-window-title: 30px;
-  $table-font-size-modal-window-text: 17px;
+  // -------- tablet Version ------- //
+  $tablet-font-size-page-title: 43px;
+  $tablet-font-size-catalog-menu-link: 20px;
+  $tablet-font-size-main-menu-link-cart-and-search: 17px;
+  $tablet-font-size-main-menu-link-mini: 15px;
+  $tablet-font-size-normal-page-text: 17px;
+  $tablet-font-size-categories-title: 43px;
+  $tablet-font-size-price-goods-week: 20px;
+  $tablet-font-size-advantages-text: 20px;
+  $tablet-font-size-goods-title: 20px;
+  $tablet-font-size-goods-stats: 15px;
+  $tablet-font-size-goods-price: 17px;
+  $tablet-font-size-production-process-text: 15px;
+  $tablet-font-size-form-header-text-intro: 17px;
+  $tablet-font-size-form-footer-text-intro: 17px;
+  $tablet-font-size-form-label-name: 19px;
+  $tablet-font-size-modal-window-title: 30px;
+  $tablet-font-size-modal-window-text: 17px;
 
   // ------- Desktop Version ------ //
   $desktop-font-size-page-title: 52px;
@@ -56,7 +56,7 @@
   $desktop-font-size-modal-window-text: 17px;
 
   // All Version
-  $all-font-size-button: 17px;
+  $all-font-size-button: 18px;
   $all-font-size-main-nav-menu-link: 17px;
   $all-font-size-mini-nav-menu-link: 15px;
   $all-font-size-sub-title-goods-week: 17px;
@@ -86,18 +86,18 @@
   $mobile-line-height-form-footer-text-intro: 16px;
   $mobile-line-height-modal-window-title: 30px;
 
-  // Table Version
-  $table-line-height-page-title: 50px;
-  $table-line-height-catalog-menu-link: 30px;
-  $table-line-height-main-menu-link: 24px;
-  $table-line-height-categories-title: 50px;
-  $table-line-height-sub-title-goods-week: 17px;
-  $table-line-height-normal-goods-week-text: 30px;
-  $table-line-height-advantages-text: 22px;
-  $table-line-height-production-process-text: 30px;
-  $table-line-height-form-header-text-intro: 30px;
-  $table-line-height-form-footer-text-intro: 30px;
-  $table-line-height-modal-window-title: 57px;
+  // tablet Version
+  $tablet-line-height-page-title: 50px;
+  $tablet-line-height-catalog-menu-link: 30px;
+  $tablet-line-height-main-menu-link: 24px;
+  $tablet-line-height-categories-title: 50px;
+  $tablet-line-height-sub-title-goods-week: 17px;
+  $tablet-line-height-normal-goods-week-text: 30px;
+  $tablet-line-height-advantages-text: 22px;
+  $tablet-line-height-production-process-text: 30px;
+  $tablet-line-height-form-header-text-intro: 30px;
+  $tablet-line-height-form-footer-text-intro: 30px;
+  $tablet-line-height-modal-window-title: 57px;
 
   // Desktop Version
   $desktop-line-height-page-title: 57px;
@@ -236,9 +236,10 @@
 
 /*************** Sizes Media Query **************/
 
-  $table-width: #{"min-width: 786px"};
+  $tablet-width: #{"min-width: 786px"};
   $desktop-width: #{"min-width: 1168px"};
 
 /***********************************************/
 
-  $retina: #{"(min-resolution: 144dpi), (min-resolution: 1.5dppx)"};
+  $retina-dpi: #{"min-resolution: 144dpi"};
+  $retina-dppx: #{"min-resolution: 1.5dppx"};

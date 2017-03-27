@@ -14,11 +14,11 @@ img {
   height: auto;
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .page-body {
     width: 768px;
 
-    font-size: $table-font-size-normal-page-text;
+    font-size: $tablet-font-size-normal-page-text;
   }
 }
 

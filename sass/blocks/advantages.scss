@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 30px;
+  padding-bottom: 15px;
 
   font-weight: bold;
   font-size: $mobile-font-size-advantages-text;
@@ -31,7 +32,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 
   text-decoration: none;
 
@@ -41,23 +42,10 @@
     display: block;
     width: 33px;
     height: 38px;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
     padding-left: 7px;
 
     background-image: url("../img/icon-feature-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--icon-clew::before {
-    content: "";
-
-    display: block;
-    width: 47px;
-    height: 27px;
-    padding-bottom: 27px;
-
-    background-image: url("../img/icon-feature-3.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -66,26 +54,11 @@
     content: "";
 
     display: block;
-    width: 34px;
-    height: 28px;
-    padding-bottom: 23px;
-    padding-left: 7px;
+    width: 47px;
+    height: 27px;
+    margin-bottom: 27px;
 
-    background-image: url("../img/icon-feature-5.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--icon-rocket::before {
-    content: "";
-
-    display: block;
-    width: 35px;
-    height: 34px;
-    padding-bottom: 18px;
-    padding-left: 3px;
-
-    background-image: url("../img/icon-feature-2.svg");
+    background-image: url("../img/icon-feature-3.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -94,9 +67,37 @@
     content: "";
 
     display: block;
+    width: 34px;
+    height: 28px;
+    margin-bottom: 23px;
+    padding-left: 15px;
+
+    background-image: url("../img/icon-feature-5.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--icon-clew::before {
+    content: "";
+
+    display: block;
+    width: 35px;
+    height: 34px;
+    margin-bottom: 18px;
+    padding-left: 3px;
+
+    background-image: url("../img/icon-feature-2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--icon-rocket::before {
+    content: "";
+
+    display: block;
     width: 55px;
     height: 23px;
-    padding-bottom: 27px;
+    margin-bottom: 27px;
 
     background-image: url("../img/icon-feature-4.svg");
     background-repeat: no-repeat;
@@ -109,7 +110,7 @@
     display: block;
     width: 33px;
     height: 32px;
-    padding-bottom: 21px;
+    margin-bottom: 13px;
     padding-left: 3px;
 
     background-image: url("../img/icon-feature-6.svg");
@@ -118,19 +119,22 @@
   }
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .advantages {
-    padding-bottom: 35px;
+    padding-top: 49px;
+    padding-bottom: 22px;
 
     font-weight: bold;
-    font-size: $table-font-size-advantages-text;
-    line-height: $table-line-height-advantages-text;
+    font-size: $tablet-font-size-advantages-text;
+    line-height: $tablet-line-height-advantages-text;
     color: $all-color-page-bold-text;
   }
 
   .advantages__title {
-    font-size: $table-font-size-categories-title;
-    line-height: $table-line-height-categories-title;
+    padding-bottom: 47px;
+
+    font-size: $tablet-font-size-categories-title;
+    line-height: $tablet-line-height-categories-title;
   }
 
   .advantages__list {
@@ -141,25 +145,31 @@
 
   .advantages__item {
     width: 300px;
+    padding-right: 34px;
+    padding-bottom: 57px;
 
     &--icon-flower {
       order: 1;
+
+      &:before {
+        padding-left: 16px;
+      }
     }
 
     &--icon-clew {
-      order: 3;
-    }
-
-    &--icon-dollar {
-      order: 5;
-    }
-
-    &--icon-rocket {
       order: 2;
     }
 
-    &--icon-heart {
+    &--icon-dollar {
+      order: 3;
+    }
+
+    &--icon-rocket {
       order: 4;
+    }
+
+    &--icon-heart {
+      order: 5;
     }
 
     &--icon-gift {
@@ -172,7 +182,8 @@
   .advantages {
     width: 700px;
     margin: 0 auto;
-    padding-bottom: 35px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 
     font-weight: bold;
     font-size: $desktop-font-size-advantages-text;
@@ -183,5 +194,15 @@
   .advantages__title {
     font-size: $desktop-font-size-categories-title;
     line-height: $desktop-line-height-categories-title;
+  }
+
+  .advantages__item {
+    padding-right: 50px;
+
+    &--icon-gift {
+      &::before {
+        margin-bottom: 18px;
+      }
+    }
   }
 }
