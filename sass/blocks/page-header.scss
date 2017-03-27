@@ -78,14 +78,13 @@
   }
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .page-header__inner {
     position: relative;
 
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    min-height: 88px;
 
     @include inner();
   }

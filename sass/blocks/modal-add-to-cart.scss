@@ -110,7 +110,7 @@
   }
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .modal-add-to-cart {
     width: 355px;
     margin-left: -284px;
@@ -126,12 +126,12 @@
   }
 
   .modal-add-to-cart__title {
-    font-size: $table-font-size-modal-window-title;
-    line-height: $table-line-height-modal-window-title;
+    font-size: $tablet-font-size-modal-window-title;
+    line-height: $tablet-line-height-modal-window-title;
   }
 
   .modal-add-to-cart__text {
-    font-size: $table-font-size-modal-window-text;
+    font-size: $tablet-font-size-modal-window-text;
   }
 }
 

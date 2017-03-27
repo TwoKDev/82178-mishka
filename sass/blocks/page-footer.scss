@@ -12,7 +12,7 @@
   @include inner();
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .page-footer {
     height: auto;
     padding-top: 33px;

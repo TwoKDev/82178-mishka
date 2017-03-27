@@ -101,8 +101,9 @@
   }
 }
 
-@media ($table-width) {
+@media ($tablet-width) {
   .catalogs-link__link {
+    min-height: 119px;
     margin-top: 5px;
 
     &--interior {
@@ -127,8 +128,8 @@
   .catalogs-link {
     flex-direction: row;
 
-    font-size: $table-font-size-catalog-menu-link;
-    line-height: $table-line-height-catalog-menu-link;
+    font-size: $tablet-font-size-catalog-menu-link;
+    line-height: $tablet-line-height-catalog-menu-link;
   }
 
   .catalogs-link__item {
