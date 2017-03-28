@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -13,7 +13,7 @@
   </head>
   <body class="page-body">
 
-    <svg style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
         <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
       </symbol>
@@ -74,7 +74,7 @@
             <li class="main-nav__item  main-nav__item--search">
               <a class="main-nav__item-link  main-nav__item-link--search" href="#">
                 <svg class="main-nav__item-icon  main-nav__item-icon--search" width="19" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+                  <use xlink:href="#icon-search"></use>
                 </svg>
                 <span class="main-nav__item-name">Поиск по сайту</span>
               </a>
@@ -82,7 +82,7 @@
             <li class="main-nav__item  main-nav__item--cart">
               <a class="main-nav__item-link  main-nav__item-link--cart" href="#">
                 <svg class="main-nav__item-icon  main-nav__item-icon--cart" width="21" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span class="main-nav__item-name">Корзина: пока пуста</span>
               </a>
@@ -128,7 +128,7 @@
               <p class="goods__price">1 200 руб.</p>
               <a class="goods__btn-buy  btn  btn--open-modal-window" href="#">
                 <svg width="21" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </div>
@@ -156,7 +156,7 @@
               <p class="goods__price">690 руб.</p>
               <a class="goods__btn-buy  btn  btn--open-modal-window" href="#">
                 <svg width="21" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </div>
@@ -184,7 +184,7 @@
               <p class="goods__price">1 500 руб.</p>
               <a class="goods__btn-buy  btn  btn--open-modal-window" href="#">
                 <svg width="21" height="19">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
               </a>
             </div>
@@ -216,7 +216,7 @@
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
             <svg width="102px" height="42px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+              <use xlink:href="#logo-footer"></use>
             </svg>
           </a>
         </div>
@@ -225,21 +225,21 @@
             <li class="social__item">
               <a class="social__link  social__link--instagram"  href="https://www.instagram.com/htmlacademy/">
                 <svg class="social__link-icon  social__link-icon--instagram" width="22px" height="21px">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+                  <use xlink:href="#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link  social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg class="social__link-icon  social__link-icon--facebook" width="15px" height="28px">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link  social__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <svg class="social__link-icon  social__link-icon--twitter" width="23px" height="20px">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -249,7 +249,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru">
             <b class="copyright__title-name">Разработано</b>
             <svg class="copyright__logo-htmlacademy" width="27px" height="34px">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </section>
