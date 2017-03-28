@@ -140,9 +140,7 @@
   width: 36px;
   height: 36px;
 
-  border-width: 2px;
-  border-style: solid;
-  border-color: $all-color-form-border-checbox-radio;
+  border: 2px solid $all-color-form-border-checbox-radio;
 
   &--radio {
     border-radius: 100%;
@@ -153,7 +151,7 @@
 .page-form__radio {
   display: none;
   &:checked ~ .page-form__input-indicator {
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 10px;
@@ -182,7 +180,7 @@
   display: none;
 
   &:checked ~ .page-form__input-indicator {
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 6px;
@@ -191,11 +189,9 @@
       width: 8px;
       height: 18px;
 
-      border-width: 2px;
-      border-style: solid;
-      border-color: $all-color-form-checkbox-indicator;
-      border-top: none;
-      border-left: none;
+      border: 2px solid $all-color-form-checkbox-indicator;
+      border-left-style: none;
+      border-top-style: none;
       transform: rotate(45deg);
     }
   }
@@ -271,9 +267,7 @@
   line-height: 18px;
   color: $all-color-page-normal-text;
 
-  border-width: 2px;
-  border-style: solid;
-  border-color: $all-color-form-border-textarea;
+  border: 2px solid $all-color-form-border-textarea;
   outline: none;
 
   resize: vertical;
@@ -289,11 +283,11 @@
   }
 }
 
-.page-form__input-field::placeholder {
+.page-form__input-field:placeholder {
   color: $all-color-form-placeholder;
 }
 
-.page-form__textarea::placeholder {
+.page-form__textarea:placeholder {
   color: $all-color-form-placeholder;
 }
 
@@ -419,7 +413,7 @@
 
   .page-form__radio {
     &:checked ~ .page-form__input-indicator {
-      &:before {
+      &::before {
         top: 14px;
         left: 14px;
 
@@ -431,7 +425,7 @@
 
   .page-form__checkbox {
     &:checked ~ .page-form__input-indicator {
-      &:before {
+      &::before {
         top: 6px;
         left: 17px;
 

@@ -10,9 +10,7 @@
   font-size: $mobile-font-size-production-process-text;
   line-height: $mobile-line-height-production-process-text;
 
-  border-width: 1px;
-  border-style: solid;
-  border-color: $all-color-page-borders;
+  border: 1px solid $all-color-page-borders;
 
   &:hover {
     box-shadow: 0 7px 15px 0 rgba(236,236,236,1);
@@ -47,8 +45,7 @@
     padding-right: 27px;
     padding-bottom: 7px;
 
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
+    background: url("../img/icon-video.svg") no-repeat;
   }
 }
 
@@ -71,8 +68,7 @@
     margin-top: -39px;
     margin-left: -51px;
 
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
+    background: url("../img/icon-play.svg") no-repeat;
   }
 
   &:hover::after {

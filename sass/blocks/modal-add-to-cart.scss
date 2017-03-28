@@ -24,9 +24,7 @@
   padding-left: 30px;
 
   background-color: white;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $all-color-page-borders;
+  border: 1px solid $all-color-page-borders;
   box-shadow: 0 10px 20px 0 rgba(198,198,198,1);
 
   &--closed {
@@ -87,9 +85,7 @@
   line-height: $all-line-height-modal-window-checkbox;
   text-align: center;
 
-  border-width: 2px;
-  border-style: solid;
-  border-color: $all-color-page-borders;
+  border: 2px solid $all-color-page-borders;
   outline: none;
   cursor: pointer;
 

@@ -17,9 +17,7 @@
 
   list-style: none;
 
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $all-color-page-borders;
+  border-bottom: 1px solid $all-color-page-borders;
 }
 
 .social__link {

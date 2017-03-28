@@ -31,9 +31,7 @@
   list-style: none;
 
   &--nojs:first-child {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: $all-color-page-borders;
+    border-top: 1px solid $all-color-page-borders;
   }
 
   &--nojs > .main-nav__item:last-of-type {
@@ -53,9 +51,7 @@
   color: $all-color-page-bold-text;
 
   background-color: white;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $all-color-page-borders;
+  border-bottom: 1px solid $all-color-page-borders;
 
   &--search {
     width: 290px;
@@ -149,11 +145,9 @@
       padding-top: 35px;
       padding-bottom: 30px;
 
-      border-width: 1px;
-      border-style: solid;
-      border-color: #e7e7e7;
-      border-top: 0;
-      border-bottom: 0;
+      border: 0 solid #e7e7e7;
+      border-right-width: 1px;
+      border-left-width: 1px;
     }
 
     &--cart {
@@ -224,9 +218,7 @@
       padding-right: 30px;
       padding-bottom: 30px;
 
-      border-right-width: 1px;
-      border-right-style: solid;
-      border-right-color: $all-color-page-borders;
+      border-right: 1px solid $all-color-page-borders;
     }
 
     &--2 {

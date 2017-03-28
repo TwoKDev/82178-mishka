@@ -14,9 +14,7 @@
   text-decoration: none;
 
   background: none;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $all-color-button-border;
+  border: 2px solid $all-color-button-border;
   outline: none;
   cursor: pointer;
 
@@ -106,6 +104,10 @@
       width: 227px;
       margin-right: 56px;
       margin-bottom: 30px;
+    }
+
+    &--form-submit {
+      width: 290px;
     }
   }
 }
