@@ -145,7 +145,7 @@
     &--icon-flower {
       order: 1;
 
-      &:before {
+      &::before {
         padding-left: 16px;
       }
     }

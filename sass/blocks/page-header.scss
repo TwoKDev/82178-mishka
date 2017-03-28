@@ -1,11 +1,9 @@
 .page-header {
   z-index: 2;
 
-  border-width: 1px;
-  border-style: solid;
-  border-color: $all-color-page-borders;
-  border-right: none;
-  border-left: none;
+  border: 1px solid $all-color-page-borders;
+  border-right-style: none;
+  border-left-style: none;
 }
 
 .page-header__inner {
@@ -30,11 +28,9 @@
   font-size: 0;
 
   background: none;
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
-  border-right: none;
-  border-left: none;
+  border: 2px solid black;
+  border-right-style: none;
+  border-left-style: none;
   outline: none;
   cursor: pointer;
 

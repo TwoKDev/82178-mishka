@@ -116,7 +116,7 @@
 
     line-height: $tablet-line-height-normal-goods-week-text;
 
-    &:after {
+    &::after {
       height: 17px;
 
       background-size: 772px 17px;
@@ -202,7 +202,7 @@
 
     line-height: $desktop-line-height-normal-goods-week-text;
 
-    &:after {
+    &::after {
       height: 23px;
 
       background-size: 1150px 23px;
