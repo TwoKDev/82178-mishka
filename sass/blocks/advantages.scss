@@ -45,9 +45,8 @@
     margin-bottom: 18px;
     padding-left: 7px;
 
-    background-image: url("../img/icon-feature-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-1.svg") no-repeat center;
+    background-size: 33px auto;
   }
 
   &--icon-dollar::before {
@@ -58,9 +57,8 @@
     height: 27px;
     margin-bottom: 27px;
 
-    background-image: url("../img/icon-feature-3.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-3.svg") no-repeat center;
+    background-size: 47px auto;
   }
 
   &--icon-heart::before {
@@ -72,9 +70,8 @@
     margin-bottom: 23px;
     padding-left: 15px;
 
-    background-image: url("../img/icon-feature-5.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-5.svg") no-repeat center;
+    background-size: 34px auto;
   }
 
   &--icon-clew::before {
@@ -86,9 +83,8 @@
     margin-bottom: 18px;
     padding-left: 3px;
 
-    background-image: url("../img/icon-feature-2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-2.svg") no-repeat center;
+    background-size: 35px auto;
   }
 
   &--icon-rocket::before {
@@ -99,9 +95,8 @@
     height: 23px;
     margin-bottom: 27px;
 
-    background-image: url("../img/icon-feature-4.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-4.svg") no-repeat center;
+    background-size: 55px auto;
   }
 
   &--icon-gift::before {
@@ -113,9 +108,8 @@
     margin-bottom: 13px;
     padding-left: 3px;
 
-    background-image: url("../img/icon-feature-6.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/icon-feature-6.svg") no-repeat center;
+    background-size: 33px auto;
   }
 }
 
