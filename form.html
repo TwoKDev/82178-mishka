@@ -62,18 +62,18 @@
 
     <header class="page-header">
       <div class="page-header__inner  page-header__inner--nojs">
-        <div class="page-logo">
-          <a class="page-logo__link" href="index.html">
-            <picture>
-              <source media="(min-width: 1168px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 786px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-mobile.svg" alt="Mishka логотип">
-            </picture>
-          </a>
-        </div>
-        <button class="page-header__toggle  page-header__toggle--nojs" type="button">Открыть меню</button>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <ul class="main-nav__list  main-nav__list--nojs">
+          <div class="page-logo">
+            <a class="page-logo__link" href="index.html">
+              <picture>
+                <source media="(min-width: 1168px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 786px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Mishka логотип">
+              </picture>
+            </a>
+          </div>
+          <button class="page-header__toggle  page-header__toggle--nojs" type="button">Открыть меню</button>
+          <ul class="main-nav__list  main-nav__list--menu-1  main-nav__list--nojs">
             <li class="main-nav__item  main-nav__item--1">
               <a class="main-nav__item-link  main-nav__item-link--1" href="catalog.html">
                 <span class="main-nav__item-name">Каталог товаров</span>
@@ -82,6 +82,8 @@
             <li class="main-nav__item  main-nav__item--2">
               <span class="main-nav__item-name">Вязание на заказ</span>
             </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--menu-2  main-nav__list--nojs">
             <li class="main-nav__item  main-nav__item--search">
               <a class="main-nav__item-link  main-nav__item-link--search" href="#">
                 <svg class="main-nav__item-icon  main-nav__item-icon--search" width="19" height="19">
