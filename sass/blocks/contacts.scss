@@ -125,6 +125,8 @@
     font-size: $tablet-font-size-categories-title;
     line-height: $tablet-line-height-categories-title;
 
+    transform: translateX(-5px);
+
     &::after {
       content: "";
 
@@ -196,6 +198,8 @@
 
     font-size: $desktop-font-size-categories-title;
     line-height: $desktop-line-height-categories-title;
+
+    transform: translateX(0);
 
     &::after {
       margin-top: 4px;

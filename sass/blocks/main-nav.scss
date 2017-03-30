@@ -127,6 +127,8 @@
 
       padding: 0;
       padding-left: 50px;
+
+      font-size: $all-font-size-mini-nav-menu-link;
     }
 
     &--2 {
@@ -137,6 +139,8 @@
 
       padding: 0;
       padding-left: 50px;
+
+      font-size: $all-font-size-mini-nav-menu-link;
     }
 
     &--search {
@@ -160,14 +164,6 @@
 
   .main-nav__item-link {
     margin: 0;
-
-    &--1 {
-      font-size: $all-font-size-mini-nav-menu-link;
-    }
-
-    &--2 {
-      font-size: $all-font-size-mini-nav-menu-link;
-    }
 
     &--search {
       display: flex;
@@ -195,6 +191,9 @@
     &--cart {
       width: 21px;
       height: 18px;
+
+      padding-right: 30px;
+      padding-left: 3px;
     }
   }
 

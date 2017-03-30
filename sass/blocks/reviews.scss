@@ -216,6 +216,8 @@
 
     font-size: $tablet-font-size-categories-title;
     line-height: $tablet-line-height-categories-title;
+
+    transform: translateX(-5px);
   }
 
   .reviews__item {

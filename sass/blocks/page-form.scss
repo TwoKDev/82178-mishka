@@ -129,6 +129,16 @@
   &--full-name {
     padding-left: 0;
   }
+
+  &--radio {
+    align-items: flex-start;
+    transform: translateY(11px);
+  }
+
+  &--checkbox {
+    align-items: flex-start;
+    transform: translateY(11px);
+  }
 }
 
 .page-form__input-indicator {
@@ -361,6 +371,16 @@
 
   .page-form__input-title {
     width: auto;
+
+    &--radio {
+      align-items: flex-start;
+      transform: translateY(18px);
+    }
+
+    &--checkbox {
+      align-items: flex-start;
+      transform: translateY(18px);
+    }
   }
 
   .page-form__input-field {
@@ -607,11 +627,10 @@
     width: 666px;
   }
 
-  .page-form__footer-wrapper {
-    width: 700px;
-  }
-
   .page-form__intro {
+    width: 400px;
+    margin-right: 173px;
+
     font-size: $tablet-font-size-form-footer-text-intro;
     line-height: $tablet-line-height-form-footer-text-intro;
   }
