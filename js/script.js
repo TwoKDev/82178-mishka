@@ -1,45 +1,29 @@
 var pageHeader = document.querySelector('.page-header__inner');
 var navToggle = document.querySelector('.main-nav__toggle');
-var navMain = document.querySelector('.main-nav__list');
+var navMain = document.querySelectorAll('.main-nav__list');
 var modalWindow = document.querySelector('.modal-add-to-cart');
 var modalOverlay = document.querySelector('.modal-overlay');
 var btnOpenModal = document.querySelectorAll('.btn--open-modal-window');
 
 pageHeader.classList.remove('page-header__inner--nojs');
 navToggle.classList.remove('main-nav__toggle--nojs');
-navMain.classList.remove('main-nav__list--nojs');
 
-// navToggle.addEventListener('click', function(event){
-//   event.preventDefault();
-//
-//   if (navMain.classList.contains('main-nav__list--closed')) {
-//     navMain.classList.remove('main-nav__list--closed');
-//     navMain.classList.add('main-nav__list--opened');
-//     navToggle.classList.add('main-nav__toggle--opened');
-//   } else {
-//     navMain.classList.add('main-nav__list--closed');
-//     navMain.classList.remove('main-nav__list--opened');
-//     navToggle.classList.remove('main-nav__toggle--opened');
-//   }
-// });
-
-Array.prototype.forEach.call(navToggle, function(button) {
-  button.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    if (navMain.classList.contains('main-nav__list--closed')) {
-      navMain.classList.remove('main-nav__list--closed');
-      navMain.classList.add('main-nav__list--opened');
-      navToggle.classList.add('main-nav__toggle--opened');
-    } else {
-      navMain.classList.add('main-nav__list--closed');
-      navMain.classList.remove('main-nav__list--opened');
-      navToggle.classList.remove('main-nav__toggle--opened');
-    }
-  });
+Array.prototype.forEach.call(navMain, function (item) {
+  item.classList.remove('main-nav__list--nojs');
 });
 
-modalOverlay.addEventListener('click', function(event) {
+navToggle.addEventListener('click', function(event){
+  event.preventDefault();
+
+  Array.prototype.forEach.call(navMain, function (item) {
+    item.classList.toggle('main-nav__list--closed');
+    item.classList.toggle('main-nav__list--opened');
+  });
+
+  navToggle.classList.toggle('main-nav__toggle--opened');
+});
+
+modalOverlay.addEventListener('click', function() {
   if (modalWindow.classList.contains('modal-add-to-cart--opened')) {
     modalWindow.classList.add('modal-add-to-cart--closed');
     modalOverlay.classList.add('modal-overlay--closed');

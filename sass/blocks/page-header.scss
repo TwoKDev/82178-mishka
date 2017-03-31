@@ -1,6 +1,9 @@
 .page-header {
   z-index: 2;
 
+  width: 320px;
+  margin: 0 auto;
+
   border: 1px solid $all-color-page-borders;
   border-right-style: none;
   border-left-style: none;
@@ -19,6 +22,10 @@
 }
 
 @media ($tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+
   .page-header__inner {
     position: relative;
 
@@ -27,5 +34,11 @@
     align-items: stretch;
 
     @include inner();
+  }
+}
+
+@media ($desktop-width) {
+  .page-header {
+    width: 1150px;
   }
 }

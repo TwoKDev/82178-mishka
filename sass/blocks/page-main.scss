@@ -1,6 +1,9 @@
 .page-main__header {
   position: relative;
 
+  width: 320px;
+  margin: 0 auto;
+
   padding-top: 70px;
   padding-bottom: 75px;
 
@@ -53,6 +56,8 @@
 
 @media ($tablet-width) {
   .page-main__header {
+    width: 768px;
+
     padding-top: 92px;
     padding-bottom: 89px;
     margin-top: -41px;
@@ -130,6 +135,7 @@
 
 @media ($desktop-width) {
   .page-main__header {
+    width: 1150px;
     padding-top: 15px;
     padding-bottom: 105px;
     margin-top: 0;

@@ -1,5 +1,7 @@
 .page-footer {
+  width: 320px;
   height: 160px;
+  margin: 0 auto;
 
   background-color: $all-color-bg-footer-block;
 }
@@ -15,6 +17,7 @@
 @media ($tablet-width) {
   .page-footer {
     height: auto;
+    width: 768px;
     padding-top: 33px;
     padding-bottom: 31px;
   }
@@ -40,5 +43,11 @@
 
   .page-footer__logo-link:active > svg {
     fill: $active-footer-logo-color;
+  }
+}
+
+@media ($desktop-width) {
+  .page-footer {
+    width: 1150px;
   }
 }

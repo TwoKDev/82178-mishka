@@ -57,9 +57,9 @@
     }
   }
 
-  //&--nojs {
-  //  display: none;
-  //}
+  &--nojs {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -104,6 +104,8 @@
   &--menu-1 {
     bottom: -153px;
     right: 0;
+
+    border-top: 1px solid $all-color-page-borders;
   }
 
   &--menu-2 {
@@ -111,11 +113,20 @@
   }
 
   &--closed {
-    display: flex;
+    display: none;
+  }
+
+  &--opened {
+    display: block;
   }
 
   &--nojs {
     position: static;
+    display: block;
+  }
+
+  &--nojs ~ &--menu-2 > .main-nav__item:nth-last-of-type(1) {
+    border: none;
   }
 }
 
