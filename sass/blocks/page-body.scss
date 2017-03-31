@@ -1,5 +1,5 @@
 .page-body {
-  width: 320px;
+  //width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -16,7 +16,7 @@ img {
 
 @media ($tablet-width) {
   .page-body {
-    width: 768px;
+    //width: 768px;
 
     font-size: $tablet-font-size-normal-page-text;
   }
@@ -24,7 +24,7 @@ img {
 
 @media ($desktop-width) {
   .page-body {
-    width: 1150px;
+    //width: 1150px;
 
     font-size: $desktop-font-size-normal-page-text;
   }

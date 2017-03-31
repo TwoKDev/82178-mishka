@@ -1,6 +1,6 @@
 .advantages {
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 
   font-weight: bold;
   font-size: $mobile-font-size-advantages-text;
@@ -32,59 +32,76 @@
   display: flex;
   flex-direction: column;
   min-height: 100px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   text-decoration: none;
 
-  &--icon-flower::before {
-    content: "";
+  &--icon-flower {
+    padding-right: 65px;
 
-    display: block;
-    width: 33px;
-    height: 38px;
-    margin-bottom: 18px;
-    padding-left: 7px;
+    &::before {
+      content: "";
 
-    background: url("../img/icon-feature-1.svg") no-repeat center;
-    background-size: 33px auto;
+      display: block;
+      width: 33px;
+      height: 38px;
+      margin-bottom: 18px;
+      padding-left: 7px;
+
+      background: url("../img/icon-feature-1.svg") no-repeat center;
+      background-size: 33px auto;
+    }
   }
 
-  &--icon-dollar::before {
-    content: "";
+  &--icon-dollar {
+    padding-right: 40px;
 
-    display: block;
-    width: 47px;
-    height: 27px;
-    margin-bottom: 27px;
+    &::before {
+      content: "";
 
-    background: url("../img/icon-feature-3.svg") no-repeat center;
-    background-size: 47px auto;
+      display: block;
+      width: 47px;
+      height: 27px;
+      margin-bottom: 27px;
+
+      background: url("../img/icon-feature-3.svg") no-repeat center;
+      background-size: 47px auto;
+    }
   }
 
-  &--icon-heart::before {
-    content: "";
+  &--icon-heart {
+    padding-right: 60px;
 
-    display: block;
-    width: 34px;
-    height: 28px;
-    margin-bottom: 23px;
-    padding-left: 15px;
+    &::before {
+      content: "";
 
-    background: url("../img/icon-feature-5.svg") no-repeat center;
-    background-size: 34px auto;
+      display: block;
+      width: 34px;
+      height: 28px;
+      margin-bottom: 26px;
+
+      background: url("../img/icon-feature-5.svg") no-repeat center;
+      background-size: 34px auto;
+
+      transform: translateX(8px) translateY(4px);
+    }
   }
 
-  &--icon-clew::before {
-    content: "";
+  &--icon-clew {
+    padding-right: 20px;
 
-    display: block;
-    width: 35px;
-    height: 34px;
-    margin-bottom: 18px;
-    padding-left: 3px;
+    &::before {
+      content: "";
 
-    background: url("../img/icon-feature-2.svg") no-repeat center;
-    background-size: 35px auto;
+      display: block;
+      width: 35px;
+      height: 34px;
+      margin-bottom: 19px;
+      padding-left: 3px;
+
+      background: url("../img/icon-feature-2.svg") no-repeat center;
+      background-size: 35px auto;
+    }
   }
 
   &--icon-rocket::before {
@@ -93,30 +110,36 @@
     display: block;
     width: 55px;
     height: 23px;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 
     background: url("../img/icon-feature-4.svg") no-repeat center;
     background-size: 55px auto;
+
+    transform: translateX(-8px);
   }
 
-  &--icon-gift::before {
-    content: "";
+  &--icon-gift {
+    padding-right: 20px;
 
-    display: block;
-    width: 33px;
-    height: 32px;
-    margin-bottom: 13px;
-    padding-left: 3px;
+    &::before {
+      content: "";
 
-    background: url("../img/icon-feature-6.svg") no-repeat center;
-    background-size: 33px auto;
+      display: block;
+      width: 33px;
+      height: 32px;
+      margin-bottom: 19px;
+      padding-left: 3px;
+
+      background: url("../img/icon-feature-6.svg") no-repeat center;
+      background-size: 33px auto;
+    }
   }
 }
 
 @media ($tablet-width) {
   .advantages {
     padding-top: 49px;
-    padding-bottom: 22px;
+    padding-bottom: 25px;
 
     font-weight: bold;
     font-size: $tablet-font-size-advantages-text;
@@ -129,6 +152,8 @@
 
     font-size: $tablet-font-size-categories-title;
     line-height: $tablet-line-height-categories-title;
+
+    transform: translateX(-3px);
   }
 
   .advantages__list {
@@ -140,10 +165,12 @@
   .advantages__item {
     width: 300px;
     padding-right: 34px;
-    padding-bottom: 57px;
+    padding-bottom: 53px;
 
     &--icon-flower {
       order: 1;
+      width: 225px;
+      padding-right: 109px;
 
       &::before {
         padding-left: 16px;
@@ -152,22 +179,46 @@
 
     &--icon-clew {
       order: 2;
+      padding-top: 5px;
+
+      &::before {
+        margin-bottom: 16px;
+      }
     }
 
     &--icon-dollar {
       order: 3;
+      width: 260px;
+      padding-right: 74px;
     }
 
     &--icon-rocket {
       order: 4;
+      padding-top: 5px;
+
+      &::before {
+        margin-bottom: 24px;
+      }
     }
 
     &--icon-heart {
       order: 5;
+      width: 240px;
+      padding-right: 94px;
+
+      &::before {
+        margin-bottom: 21px;
+      }
     }
 
     &--icon-gift {
       order: 6;
+      width: 290px;
+      padding-right: 44px;
+
+      &::before {
+        margin-bottom: 17px;
+      }
     }
   }
 }
@@ -177,7 +228,7 @@
     width: 700px;
     margin: 0 auto;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 33px;
 
     font-weight: bold;
     font-size: $desktop-font-size-advantages-text;
@@ -193,9 +244,23 @@
   .advantages__item {
     padding-right: 50px;
 
+    &--icon-flower {
+      padding-right: 125px;
+    }
+
+    &--icon-dollar {
+      padding-right: 90px;
+    }
+
+    &--icon-heart {
+      padding-right: 110px;
+    }
+
     &--icon-gift {
+      padding-right: 60px;
+
       &::before {
-        margin-bottom: 18px;
+        margin-bottom: 20px;
       }
     }
   }

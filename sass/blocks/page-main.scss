@@ -1,6 +1,9 @@
 .page-main__header {
   position: relative;
 
+  width: 320px;
+  margin: 0 auto;
+
   padding-top: 70px;
   padding-bottom: 75px;
 
@@ -53,8 +56,13 @@
 
 @media ($tablet-width) {
   .page-main__header {
+    width: 768px;
+
     padding-top: 92px;
     padding-bottom: 89px;
+    margin-top: -41px;
+
+    border-top: 1px solid $all-color-page-borders;
 
     &--index-page {
       display: flex;
@@ -96,6 +104,10 @@
     }
   }
 
+  .page-main__title-br {
+    display: none;
+  }
+
   .page-main__title {
     font-size: $tablet-font-size-page-title;
     line-height: $tablet-line-height-page-title;
@@ -123,8 +135,11 @@
 
 @media ($desktop-width) {
   .page-main__header {
+    width: 1150px;
     padding-top: 15px;
     padding-bottom: 105px;
+    margin-top: 0;
+    border-top: none;
 
     &--index-page {
       padding-bottom: 0;

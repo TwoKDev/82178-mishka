@@ -1,6 +1,6 @@
 .contacts {
   padding-top: 36px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 
   @include inner();
 }
@@ -64,7 +64,7 @@
 
   &--address {
     display: block;
-    padding-right: 39px;
+    padding-right: 43px;
   }
 }
 
@@ -125,6 +125,8 @@
     font-size: $tablet-font-size-categories-title;
     line-height: $tablet-line-height-categories-title;
 
+    transform: translateX(-5px);
+
     &::after {
       content: "";
 
@@ -162,7 +164,7 @@
 
     width: 768px;
     margin-right: -50px;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
     margin-left: -50px;
 
     background-image: url("../img/map-tablet@1x.jpg");
@@ -183,7 +185,7 @@
     flex-direction: column;
     width: 875px;
     padding-top: 127px;
-    padding-bottom: 105px;
+    padding-bottom: 110px;
     padding-left: 225px;
   }
 
@@ -196,6 +198,8 @@
 
     font-size: $desktop-font-size-categories-title;
     line-height: $desktop-line-height-categories-title;
+
+    transform: translateX(0);
 
     &::after {
       margin-top: 4px;

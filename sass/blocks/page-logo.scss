@@ -21,17 +21,18 @@
   .page-logo {
     width: 112px;
     padding-left: 0;
+    padding-right: 208px;
   }
 }
 
 @media ($desktop-width) {
   .page-logo {
-    position: absolute;
-    top: 5px;
-    left: 500px;
-    z-index: 4;
-
+    order: 1;
     width: 148px;
+
     padding: 0;
+    padding-right: 102px;
+    padding-left: 73px;
+    padding-top: 8px;
   }
 }

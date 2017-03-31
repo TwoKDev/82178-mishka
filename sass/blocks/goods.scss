@@ -126,6 +126,7 @@
   }
 
   .goods__title {
+    width: 240px;
     font-size: $tablet-font-size-goods-title;
   }
 
@@ -169,6 +170,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .goods__title {
