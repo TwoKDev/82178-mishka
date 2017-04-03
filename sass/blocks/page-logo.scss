@@ -19,9 +19,9 @@
 
 @media ($tablet-width) {
   .page-logo {
+    flex-grow: 2;
     width: 112px;
     padding-left: 0;
-    padding-right: 208px;
   }
 }
 
